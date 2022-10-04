@@ -31,3 +31,20 @@ dot 73
 dot75
 
 ![image](https://user-images.githubusercontent.com/113382501/193148961-03884062-34ec-4168-bb6e-3d885bfe0db3.png)
+
+
+dot 74
+
+![image](https://user-images.githubusercontent.com/113382501/193908331-140199a7-dcb2-427c-98ae-d866e2c3aa6b.png)
+
+
+dot 76
+
+![image](https://user-images.githubusercontent.com/113382501/193909067-cab5a360-bef4-4c86-b199-d87e2639374e.png)
+
+
+dot 79
+
+![image](https://user-images.githubusercontent.com/113382501/193909984-647e1e08-b68d-4dce-aba7-822e00eea8b5.png)
+
+
