@@ -1,4 +1,4 @@
-<h1> version 0.0.15 </h1>
+<h1> version 0.0.16 </h1>
 
 <h4> Trying to play by my rules. </h4>
 
@@ -51,14 +51,14 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h4> figuring out the code </h4>
 
-<input type="text" id="myTextIn3" value ="0" size="30"> + <input type="text" id="myTextIn4" value="2" size="30">
+<input type="text" id="myTextIn3" value ="0" size="30"> + <input type="text" id="myTextIn4" value="0" size="30">
 
 <input id="myButton" type = "button" value="Add the number" onclick="{
                                                                      var my1 = document.getElementById('myTextIn3').value
                                                                      var my2 = document.getElementById('myTextIn4').value
-                                                                     document.getElementById('myDiv02').innerHTML = 'Number added as strings ' + my1 + ' + ' + my2 + ' = ' + (my1 + my2) + '<br>'
+                                                                     document.getElementById('myDiv02').innerHTML = 'Numbers added as strings ' + my1 + ' + ' + my2 + ' = ' + (my1 + my2) + '<br>'
                                                                      document.getElementById('myDiv02').innerHTML = 'Numbers added as integers ' + my1 + ' + ' + my2 + ' = ' + (parseInt(my1) + parseInt(my2)) + '<br>'
-                                                                     
+                                                                     document.getElementById('myDiv02').innerHTML = 'Numbers added as floating point (decimal) numbers ' + my1 + ' + ' + my2 + ' = ' + (parseFloat(my1) + parseFloat(my2)) + '<br>'
                                                                      }">
 
 <div id='myDiv02'>...</div>
