@@ -35,3 +35,14 @@
                                                                      }">
 
 <div id='myDiv03'>...</div>
+
+
+<input type="text" id="myTextIn7" value = "0" size="20"> X <input type="text" id="myTextIn8" value="0" size="20">
+
+<input id="myButton" type = "button" value="divide the numbers" onclick="{
+                                                                     var my1 = document.getElementById('myTextIn7').value
+                                                                     var my2 = document.getElementById('myTextIn8').value
+                                                                     document.getElementById('myDiv04').innerHTML = 'Numbers divided together ' + my1 + ' / ' + my2 + ' = ' + (parseFloat(my1) / parseFloat(my2)) + '<br>'
+                                                                     }">
+
+<div id='myDiv04'>...</div>
