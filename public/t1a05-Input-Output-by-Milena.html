@@ -1,0 +1,48 @@
+<h4> version 1.1.9 </h4>
+
+
+<h4> Trying to make a calculator </h4>
+
+<input type="text" id="myTextIn1" value = "0" size="20"> + <input type="text" id="myTextIn2" value="0" size="20">
+
+<input id="myButton" type = "button" value="Add the numbers" onclick="{
+                                                                     var my1 = document.getElementById('myTextIn1').value
+                                                                     var my2 = document.getElementById('myTextIn2').value
+                                                                     document.getElementById('myDiv01').innerHTML = 'Numbers added together ' + my1 + ' + ' + my2 + ' = ' + (parseFloat(my1) + parseFloat(my2)) + '<br>'
+                                                                     }">
+
+<div id='myDiv01'>...</div>
+
+
+
+<input type="text" id="myTextIn3" value = "0" size="20"> - <input type="text" id="myTextIn4" value="0" size="20">
+
+<input id="myButton" type = "button" value="subtract the numbers" onclick="{
+                                                                     var my1 = document.getElementById('myTextIn3').value
+                                                                     var my2 = document.getElementById('myTextIn4').value
+                                                                     document.getElementById('myDiv02').innerHTML = 'Numbers subtracted together ' + my1 + ' - ' + my2 + ' = ' + (parseFloat(my1) - parseFloat(my2)) + '<br>'
+                                                                     }">
+
+<div id='myDiv02'>...</div>
+
+
+<input type="text" id="myTextIn5" value = "0" size="20"> X <input type="text" id="myTextIn6" value="0" size="20">
+
+<input id="myButton" type = "button" value="times the numbers" onclick="{
+                                                                     var my1 = document.getElementById('myTextIn5').value
+                                                                     var my2 = document.getElementById('myTextIn6').value
+                                                                     document.getElementById('myDiv03').innerHTML = 'Numbers timed together ' + my1 + ' * ' + my2 + ' = ' + (parseFloat(my1) * parseFloat(my2)) + '<br>'
+                                                                     }">
+
+<div id='myDiv03'>...</div>
+
+
+<input type="text" id="myTextIn7" value = "0" size="20"> / <input type="text" id="myTextIn8" value="0" size="20">
+
+<input id="myButton" type = "button" value="divide the numbers" onclick="{
+                                                                     var my1 = document.getElementById('myTextIn7').value
+                                                                     var my2 = document.getElementById('myTextIn8').value
+                                                                     document.getElementById('myDiv04').innerHTML = 'Numbers divided together ' + my1 + ' / ' + my2 + ' = ' + (parseFloat(my1) / parseFloat(my2)) + '<br>'
+                                                                     }">
+
+<div id='myDiv04'>...</div>
