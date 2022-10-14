@@ -1,4 +1,4 @@
-<h4> version 1.0.7 </h4>
+<h4> version 1.0.8 </h4>
 
 
 <h4> Trying to make a calculator </h4>
@@ -28,10 +28,10 @@
 
 <input type="text" id="myTextIn5" value = "0" size="20"> X <input type="text" id="myTextIn6" value="0" size="20">
 
-<input id="myButton" type = "button" value="subtract the numbers" onclick="{
+<input id="myButton" type = "button" value="times the numbers" onclick="{
                                                                      var my1 = document.getElementById('myTextIn5').value
                                                                      var my2 = document.getElementById('myTextIn6').value
-                                                                     document.getElementById('myDiv03').innerHTML = 'Numbers timed together ' + my1 + ' * ' + my2 + ' = ' + (parseFloat(my1) - parseFloat(my2)) + '<br>'
+                                                                     document.getElementById('myDiv03').innerHTML = 'Numbers timed together ' + my1 + ' * ' + my2 + ' = ' + (parseFloat(my1) * parseFloat(my2)) + '<br>'
                                                                      }">
 
 <div id='myDiv03'>...</div>
