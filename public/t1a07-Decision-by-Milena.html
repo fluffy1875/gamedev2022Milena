@@ -67,3 +67,17 @@ Version 0.0.3
 }">
 
 <div id= "myDiv03">...</div>
+
+
+<input id= "myText04" type= number value="0"><br><br><br>
+
+<input type= button   value= "Click here to check if the number is equal to five"   onclick="{
+                                                     let myIn04 = parseFloat(document.getElementById ('myText04').value)
+                                                     if (myIn04 % 5 == 0){
+                                                     document.getElementById('myDiv04').innerHTML = myIn04 + ' This indeed is 5'
+                                                     } else {
+                                                     document.getElementById('myDiv04').innerHTML = myIn04 + ' This is not 5 sadley'
+                                                     }
+}">
+
+<div id= "myDiv04">...</div>
