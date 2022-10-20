@@ -107,3 +107,22 @@ Version 0.0.8
 }">
 
 <div id= "myDiv05">...</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<input id= "myText06" type= number value="15"><br><br><br>
+
+<input type= button   value= "Click here to check if the number is smaller then 10, but does not equal to 5 or below 0"   onclick="{
+                                                     let myIn06 = parseFloat(document.getElementById ('myText06').value)
+                                                     if (myIn06 < 10 && myIn06 != 5 && myIn06 > 0){
+                                                     document.getElementById('myDiv06').innerHTML = myIn06 + ' This indeed can be calculated'
+                                                     } else {
+                                                     document.getElementById('myDiv06').innerHTML = myIn06 + ' This can not be calculated sadley'
+                                                     }
+}">
+
+<div id= "myDiv06">...</div>
