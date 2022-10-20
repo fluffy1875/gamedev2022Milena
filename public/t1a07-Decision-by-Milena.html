@@ -120,7 +120,11 @@ Version 0.0.9
                                                      let myIn06 = parseFloat(document.getElementById ('myText06').value)
                                                      if (myIn06 < 10 && myIn06 != 5 && myIn06 > 0){
                                                      document.getElementById('myDiv06').innerHTML = myIn06 + ' This indeed can be calculated'
-                                                     } else {
+                                                     } 
+                                                     if else (myIn06 < 0 && myIn06 > 10){
+                                                     document.getElementById('myDiv06').innerHTML = myIn06 + 'This Number Does Not Exsist'
+                                                     }                                                                             
+                                                     else {
                                                      document.getElementById('myDiv06').innerHTML = myIn06 + ' This can not be calculated sadley'
                                                      }
 }">
