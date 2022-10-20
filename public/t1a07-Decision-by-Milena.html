@@ -1,4 +1,4 @@
-Version 0.0.9
+Version 0.0.2
 
 <h2 align=center> t1a07-decision-by-Milena.html
   
@@ -140,21 +140,22 @@ In this function i am using 3 commends: if, else if, and else. use numbers 11, 5
 <br>
 <br>
 
+<input id= "myText07" type= number value="0"><br><br><br>
 
-<input id= "myNum09" type= number value= "0"> <br><br><br>
-
-<input type= button value= "Click here and see what happens" onclick="{  
-                                                                      let myLet01 = parseFloat(document.getElementById ('myNum09').value)
-                                                                      if ('myLet01 <= 0){
-                                                                      document.getElementById('myDiv07').innerHTML = myLet01 + ' You still have lots of time to go to school still'
-                                                                      }
-                                                                      else {
-                                                                      document.getElementById('myDiv07').innerHTML = myLet01 + ' You don't have lots of time to go to school still'
-                                                                      }
-}">
-
-
-<div id = "myDiv07">...</div>
+<input type= button   value= "Click here to see if it works"   onclick="{
+                                                     let myIn07 = parseFloat(document.getElementById ('myText07').value)
+                                                     if (myIn07 < 0){
+                                                     document.getElementById('myDiv07').innerHTML = myIn07 + ' You are still in time to go to school'
+                                                     }                                                                     
+                                                     else {
+                                                     document.getElementById('myDiv07').innerHTML = myIn07 + 'You are running late'
+                                                     }
+                                                     }">
+                                                     
+                                                     
+                                                     
+<div id= "myDiv01">...</div>
+                                                                        
                                                                       
                                                                       
               
