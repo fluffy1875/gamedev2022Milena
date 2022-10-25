@@ -1,4 +1,4 @@
-Version 0.0.4
+Version 0.0.5
 
 <h2 align=center> t1a07-decision-by-Milena.html
   
@@ -144,11 +144,11 @@ In this function i am using 3 commends: if, else if, and else. use numbers 11, 5
 
 <input type= button   value= "Are you late to school?"   onclick="{
                                                      let myIn07 = parseFloat(document.getElementById ('myText07').value)
-                                                     if (myIn07 < 20){
+                                                     if (myIn07 < 20 && myIn07 > 0){
                                                      document.getElementById('myDiv07').innerHTML = myIn07 + ' You are still in time to go to school'
                                                      }   
                                                      else if (myIn07 < 40 && myIn07 > 20){
-                                                     document.getElementById('myDiv07').innerHTML = myIn07 + ' You are starting to become late. But your still on time'
+                                                     document.getElementById('myDiv07').innerHTML = myIn07 + ' You are starting to run out of time'
                                                      }     
                                                      else if (myIn07 < 0){
                                                      document.getElementById('myDiv07').innerHTML = myIn07 + ' Time can not be in the negatives'
@@ -157,7 +157,7 @@ In this function i am using 3 commends: if, else if, and else. use numbers 11, 5
                                                      document.getElementById('myDiv07').innerHTML = myIn07 + ' YOU ARE LATE!'
                                                      } 
                                                      else {
-                                                     document.getElementById('myDiv07').innerHTML = myIn07 + ' You are running late'
+                                                     document.getElementById('myDiv07').innerHTML = myIn07 + ' There is an error, oof'
                                                      }
                                                      }">
                                                      
