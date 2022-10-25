@@ -149,7 +149,10 @@ In this function i am using 3 commends: if, else if, and else. use numbers 11, 5
                                                      }   
                                                      else if (myIn07 < 40 && myIn07 > 20){
                                                      document.getElementById('myDiv07').innerHTML = myIn07 + ' You are starting to become late. But your still on time'
-                                                     }                   
+                                                     }     
+                                                     else if (myIn07 < 0){
+                                                     document.getElementById('myDiv07').innerHTML = myIn07 + ' Time can not be in the negatives'
+                                                     }    
                                                      else {
                                                      document.getElementById('myDiv07').innerHTML = myIn07 + 'You are running late'
                                                      }
