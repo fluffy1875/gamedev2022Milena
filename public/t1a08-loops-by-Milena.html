@@ -53,6 +53,7 @@ Max loops: <input id= "myNum02" type=number value="4" > <br>
                                                                   }
                                                                   else {
                                                                      'This is not even'
+                                                                     }
                                                                   
                                                                   myTemp += 'Loop numbers: ' + myLoop + '<br>'
                                                                   }
@@ -78,9 +79,11 @@ Max loops: <input id= "myNum03" type=number value="3" > <br>
                                                                   let myMax = parseInt(document.getElementById('myNum03').value)
                                                                   
                                                                   for (let myLoop = 0; myLoop < 10; myLoop++ ){
-                                                                  if (myLoop ){
-                                                                  myTemp +=  ' + myLoop ' * ' + myLoop'
+                                                                  if (myLoop < 10){
+                                                                  myTemp +=  'I can hold more than 10
                                                                   }
+                                                                     else {
+                                                                     myTemp += 'I can not hold more then 10, oof'
                                                                   
                                                                   myTemp += 'Loop numbers: ' + myLoop + '<br>'
                                                                   }
