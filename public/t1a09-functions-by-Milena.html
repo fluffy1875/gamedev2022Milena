@@ -51,8 +51,9 @@ function myGrabNumber(){
   
   function mySubtraction(){
   let myIn02 = parseInt(document.getElementById('myText02').value)
-  let mySum = myIn02 - myIn02
-  let myReply = myIn02 + ' - ' + myIn02 + ' = ' + mySum
+  let myIn07 = parseInt(document.getElementById('myText07').value)
+  let mySum = myIn02 - myIn07
+  let myReply = myIn02 + ' - ' + myIn07 + ' = ' + mySum
   return myReply
   
   }
@@ -60,6 +61,12 @@ function myGrabNumber(){
 </script>
 
 <input type=text id= "myText02" value="2"><br>
+
+<input type = button  value= "Function Example" onClick="{
+                                                          document.getElementById('myDiv02').innerHTML = mySubtraction()
+                                                          }">
+
+<input type=text id= "myText07" value="2"><br>
 
 <input type = button  value= "Function Example" onClick="{
                                                           document.getElementById('myDiv02').innerHTML = mySubtraction()
