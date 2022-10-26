@@ -10,7 +10,7 @@
   
 </script>
 
-Version 0.0.4
+Version 0.0.5
 
 <h2 align=center> t1a09-functions-by-Milena.html</h2>
 
@@ -94,3 +94,23 @@ function myGrabNumber(){
                                                           }">
 
 <div id="myDiv03">...</div>
+
+<script>
+  
+  function myDivision(){
+  let myIn04 = parseInt(document.getElementById('myText04').value)
+  let mySum = myIn04 / myIn04
+  let myReply = myIn04 + ' X ' + myIn04 + ' = ' + mySum
+  return myReply
+  
+  }
+  
+</script>
+
+<input type=text id= "myText04" value="10"><br>
+
+<input type = button  value= "Function Example" onClick="{
+                                                          document.getElementById('myDiv04').innerHTML = myDivision()
+                                                          }">
+
+<div id="myDiv04">...</div>
