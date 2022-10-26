@@ -36,3 +36,33 @@ function myGrabNumber(){
                                                           }">
 
 <div id="myDiv01">...</div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<h4> Playing by my rules </h4>
+
+
+<script>
+  
+  function mySubtraction(){
+  let myIn02 = parseInt(document.getElementById('myText02').value)
+  let mySum = myIn02 + myIn02
+  let myReply = myIn02 + ' - ' + myIn02 + ' = ' + mySum
+  return myReply
+  
+  }
+  
+</script>
+
+<input type=text id= "myText02" value="2"><br>
+
+<input type = button  value= "Function Example" onClick="{
+                                                          document.getElementById('myDiv02').innerHTML = myExampleFunction()
+                                                          }">
+
+<div id="myDiv02">...</div>
