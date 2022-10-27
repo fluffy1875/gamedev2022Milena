@@ -159,3 +159,24 @@ function myGrabNumber(){
 <hr>
 <br>
 <br>
+
+<script>
+  
+  function myString(){
+  let myIn08 = parseInt(document.getElementById('myText08').value)
+  let myIn09 = parseInt(document.getElementById('myText09').value)
+  let mySum = myIn08 + myIn09
+  let myReply = myIn08 + ' + ' + myIn09 + ' = ' + mySum
+  return myReply
+  
+  }
+  
+</script>
+
+<input type=text id= "myText08" value="10"> + <input type="text" id="myText09" value="0"><br>
+
+<input type = button  value= "Function Example" onClick="{
+                                                          document.getElementById('myDiv08').innerHTML = myString()
+                                                          }">
+
+<div id="myDiv08">...</div>
