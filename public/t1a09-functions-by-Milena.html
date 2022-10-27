@@ -10,7 +10,7 @@
   
 </script>
 
-Version 0.0.9
+Version 0.0.2
 
 <h2 align=center> t1a09-functions-by-Milena.html</h2>
 
@@ -137,7 +137,7 @@ function myGrabNumber(){
 <script>
   
   function myTwoText(){
-  let myIn05 = document.getElementById('myText05').value
+  let myIn05 = document.getElementById('myText05')
   let myIn06 = document.getElementById('myText06').value
   let mySum = myIn05 + myIn06 
   let myReply = myIn05 + ' + ' + myIn06 + ' = ' + mySum
@@ -147,7 +147,7 @@ function myGrabNumber(){
   
 </script>
 
-<input type=text id= "myText05" value="10"> - <input type="text" id="myText06" value="0" size="20"><br>
+<input type=text id= "myText05" value="10"> - <input type="text" id="myText06" value="0" size="10"><br>
 
 <input type = button  value= "Function Example" onClick="{
                                                           document.getElementById('myDiv06').innerHTML = myTwoText()
@@ -155,3 +155,35 @@ function myGrabNumber(){
                                                           }">
 
 <div id="myDiv06">...</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<script>
+  
+  function myTwoText(){
+  let myIn07 = parseInt(document.getElementById('myText07').value)
+  let myIn08 = parseInt(document.getElementById('myText08').value)
+  let mySum = myIn07 + myIn08 
+  let myReply = myIn07 + ' + ' + myIn08 + ' = ' + mySum
+  return myReply
+  
+  }
+  
+</script>
+
+<input type=text id= "myText07" value="10"> - <input type="text" id="myText08" value="0" size="10"><br>
+
+<input type = button  value= "Function Example" onClick="{
+                                                          document.getElementById('myDiv08').innerHTML = myTwoText()
+                                                          document.getElementById('myDiv08').innerHTML = myTwoText()
+                                                          }">
+
+<div id="myDiv08">...</div>
+
+
