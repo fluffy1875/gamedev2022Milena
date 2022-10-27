@@ -108,7 +108,17 @@ Max loops: <input id= "myNum04" type=number value="8" > <br>
                                                                   
                                                                   let myMax = parseInt(document.getElementById('myNum04').value)
                                                                   
-                                                                  for (let myLoop = -1; myLoop < myMax; myLoop++ ){
+                                                                  for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                                  for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                                  if (myLoop * 2 > myMax){
+                                                                  myTemp += ' ' 
+                                                                  }
+                                                                  
+                                                                  myTemp += 'Loop numbers: ' + myLoop + '<br>'
+                                                                  }
+                                                                  
+                                                                  document.getElementById('myDiv04').innerHTML = myTemp
+                                                                  }">
                                                                   if (myLoop * 2 > myMax){
                                                                   myTemp += ' ' 
                                                                   }
