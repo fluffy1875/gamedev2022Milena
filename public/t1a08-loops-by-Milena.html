@@ -92,3 +92,31 @@ Max loops: <input id= "myNum03" type=number value="7" > <br>
 
 <div id ="myDiv03"> ... </div>
 
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+Max loops: <input id= "myNum04" type=number value="8" > <br>
+
+<input type=button value="Basic For Loop with Decisions" onclick="{
+                                                                  document.getElementById('myDiv04').innerHTML = ''
+                                                                  let myTemp = ''
+                                                                  
+                                                                  let myMax = parseInt(document.getElementById('myNum04').value)
+                                                                  
+                                                                  for (let myLoop = 1; myLoop < myMax; myLoop++ ){
+                                                                  if (myLoop * 2 > myMax){
+                                                                  myTemp += ' ' 
+                                                                  }
+                                                                  
+                                                                  myTemp += 'Loop numbers: ' + myLoop + '<br>'
+                                                                  }
+                                                                  
+                                                                  document.getElementById('myDiv04').innerHTML = myTemp
+                                                                  }">
+
+<div id ="myDiv04"> ... </div>
