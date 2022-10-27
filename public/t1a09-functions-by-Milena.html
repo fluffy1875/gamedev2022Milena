@@ -136,22 +136,20 @@ function myGrabNumber(){
 
 <script>
   
-  function myTwoText(){
-  let myIn05 = document.getElementById('myText05')
-  let myIn06 = document.getElementById('myText06').value
-  let mySum = myIn05 + myIn06 
-  let myReply = myIn05 + ' + ' + myIn06 + ' = ' + mySum
+  function myDivision(){
+  let myIn05 = document.getElementById('myText04').value
+  let mySum = myIn05 
+  let myReply = myIn05 + ' + ' + myIn05 + ' = ' + mySum
   return myReply
   
   }
   
 </script>
 
-<input type=text id= "myText05" value="10"> - <input type="text" id="myText06" value="0"><br>
+<input type=text id= "myText05" value="10"><br>
 
 <input type = button  value= "Function Example" onClick="{
-                                                          document.getElementById('myDiv06').innerHTML = myTwoText()
-                                                          document.getElementById('myDiv06').innerHTML = myTwoText()
+                                                          document.getElementById('myDiv05').innerHTML = myDivision()
                                                           }">
 
-<div id="myDiv06">...</div>
+<div id="myDiv05">...</div>
