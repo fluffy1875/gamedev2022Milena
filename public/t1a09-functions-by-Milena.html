@@ -10,7 +10,7 @@
   
 </script>
 
-Version 0.0.6
+Version 0.0.7
 
 <h2 align=center> t1a09-functions-by-Milena.html</h2>
 
@@ -137,18 +137,20 @@ function myGrabNumber(){
 <script>
   
   function mySpeech(){
+  let myIn05 = document.getElementById('Something').value
   let myIn06 = document.getElementById('Something').value
-  let myTalk = myIn06 
-  let myReply = myTalk = 'Sike'
+  let mySum = myIn05 + myIn06 
+  let myReply = myIn05 + ' + ' + myIn06 + ' = ' + mySum
   return myReply
   
   }
   
 </script>
 
-<input type=text id= "Something" value="write something"> - <input type="text" id="myTextIn4" value="0" size="20"><br>
+<input type=text id= "myText05" value="write something"> - <input type="text" id="myText06" value="0" size="20"><br>
 
 <input type = button  value= "Function Example" onClick="{
+                                                          document.getElementById('myDiv06').innerHTML = myDivision()
                                                           document.getElementById('myDiv06').innerHTML = myDivision()
                                                           }">
 
