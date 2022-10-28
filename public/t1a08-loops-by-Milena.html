@@ -120,3 +120,34 @@ Max loops: <input id= "myNum04" type=number value="5" > <br>
                                                                   }">
 
 <div id ="myDiv04"> ... </div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+Max loops: <input id= "myNum05" type=number value="5" > <br>
+
+<input type=button value="Press here" onclick="{
+                                                                  document.getElementById('myDiv05').innerHTML = ''
+                                                                  let myTemp = ''
+                                                                  
+                                                                  let myMax = parseInt(document.getElementById('myNum05').value)
+                                                                  
+                                                                  for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                                  for (let myThing = 0; myThing < myMax; myLoop++ ){
+                                               
+                                               
+                                                                   }
+                                                                  
+                                                                  myTemp += 'Loop numbers: ' + myLoop + '<br>'
+                                                                  }
+                                                                  
+                                                                  document.getElementById('myDiv05').innerHTML = myTemp
+                                                                  }">
+
+<div id ="myDiv05"> ... </div>
+
