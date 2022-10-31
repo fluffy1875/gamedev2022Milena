@@ -32,3 +32,21 @@ Events are HTML code that activates Javascript code
 
 <br>
 
+<hr>
+
+
+<input type=text id="myText02" value="5"><br>
+
+<input type=button value="Example onClick" onClick="{
+                                                    document.getElementById('myDiv02').innerHTML = document.getElementById('myText02').value
+                                                    }">
+
+<div id="myDiv02">...</div>
+
+<b id="myB02" onMouseOut="{
+                          document.getElementById('myB02').innerHTML = 'This is obviesly a number so what's wrong with it?'
+                          }" onMouseOver="{
+                                          document.getElementById('myB02').innerHTML = 'it's simple THIS NUMBER DOES NOT EXIST'
+                                          }" > HEHEHEHE </b>
+
+<br>
