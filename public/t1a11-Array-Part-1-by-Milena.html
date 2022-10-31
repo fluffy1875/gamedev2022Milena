@@ -81,7 +81,7 @@ Num Array Entry: <input type=text id="myText03" value="5"><br>
 
 <input type=button value="New1" onClick="{
     let myTemp = document.getElementById('myText03').value; 
-    const randomElement = array[Math.floor(Math.random() * array.length)];
+   // const randomElement = array[Math.floor(Math.random() * array.length)];
     let mySum = ''
     document.getElementById('myDiv03').innerHTML = ' '
 
@@ -97,7 +97,7 @@ Num Array Entry: <input type=text id="myText03" value="5"><br>
     myArray[8] = Math.floor(Math.random() * myTemp)
     myArray[9] = Math.floor(Math.random() * myTemp)
 
-    for (int myLoop = 1; myLoop <= 10; myLoop++) {
+    for (myLoop = 1; myLoop <= 10; myLoop++) {
        //int x = 1 + (int) (Math.random() * 10);
        mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] + '<br>'
     }
