@@ -15,6 +15,7 @@ Events are HTML code that activates Javascript code
 
 <h4> Example working code </h4>
 
+
 <input type=text id="myText01" value="3"><br>
 
 <input type=button value="Example onClick" onClick="{
@@ -23,25 +24,11 @@ Events are HTML code that activates Javascript code
 
 <div id="myDiv01">...</div>
 
-
 <b id="myB01" onMouseOut="{
                           document.getElementById('myB01').innerHTML = 'This is bold'
-                          onMouseOver="{
-   document.getElementById('myB01').innerHTML = 'This is cool'
-   }" > This is bold</b>
-     
-     
-     <br>
-     <br>
-     <hr>
-     <br>
-     <br>
-     
-     
-     <input type=text id="myText02" value="3"><br>
+                          }" onMouseOver="{
+                                          document.getElementById('myB01').innerHTML = 'This is cool'
+                                          }" > This is bold </b>
 
-<input type=button value="Example onClick" onClick="{
-                                                    document.getElementById('myDiv02').innerHTML = document.getElementById('myText02').value
-                                                    }">
+<br>
 
-<div id="myDiv02">...</div>
