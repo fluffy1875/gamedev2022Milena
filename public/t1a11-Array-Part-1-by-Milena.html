@@ -85,16 +85,16 @@ Num Array Entry: <input type=text id="myText03" value="5"><br>
                                                     document.getElementById('myDiv03').innerHTML = ' '
                                                     
                                                     myArray = new Array()
-                                                    myArray[0] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[1] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[2] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[3] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[4] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[5] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[6] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[7] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[8] = '[Math.floor(Math.random() * array.length)]'
-                                                    myArray[9] = '[Math.floor(Math.random() * array.length)]'
+                                                    myArray[0] = Math.floor(Math.random() * array.length)
+                                                    myArray[1] = Math.floor(Math.random() * array.length)
+                                                    myArray[2] = Math.floor(Math.random() * array.length)
+                                                    myArray[3] = Math.floor(Math.random() * array.length)
+                                                    myArray[4] = Math.floor(Math.random() * array.length)
+                                                    myArray[5] = Math.floor(Math.random() * array.length)
+                                                    myArray[6] = Math.floor(Math.random() * array.length)
+                                                    myArray[7] = Math.floor(Math.random() * array.length)
+                                                    myArray[8] = Math.floor(Math.random() * array.length)
+                                                    myArray[9] = Math.floor(Math.random() * array.length)
                                                     
                                                     for (int i = 1; i <= 10; i++) {
                                                     int x = 1 + (int) (Math.random() * 10);
@@ -140,3 +140,46 @@ Float Array: <input type=text id="myText04" value="3"><br>
                                                     }">
 
 <div id="myDiv04">...</div>
+
+
+Float Array: <input type=text id="myText05" value="3"><br>
+
+<input type=button value="Example onClick" onClick="{
+                                                    let myTemp = document.getElementById('myText05').value
+                                                    let mySum = ''
+                                                    document.getElementById('myDiv05').innerHTML = ' '
+                                                    
+                                                    myArray = new Array()
+                                                  
+                                                    myArray[0] = '0.1'
+                                                    myArray[1] = '0.2'
+                                                    myArray[2] = '0.3'
+                                                    myArray[3] = '0.4'
+                                                    myArray[4] = '0.5'
+                                                    myArray[5] = '0.6'
+                                                    myArray[6] = '0.7'
+                                                    myArray[7] = '0.8'
+                                                    myArray[8] = '0.9'
+                                                    myArray[9] = '1.0'
+                                                    
+                                                    
+                                                    myArray = new Array()
+                                                    
+                                                    myArray[0] = '1'
+                                                    myArray[1] = '2'
+                                                    myArray[2] = '3'
+                                                    myArray[3] = '4'
+                                                    myArray[4] = '5'
+                                                    myArray[5] = '6'
+                                                    myArray[6] = '7'
+                                                    myArray[7] = '8'
+                                                    myArray[8] = '9'
+                                                    myArray[9] = '10'
+                                                    
+                                                    for (let myLoop=0; myLoop < myTemp; myLoop++){
+                                                    mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] + '<br>'
+                                                    }
+                                                    document.getElementById('myDiv05').innerHTML = mySum
+                                                    }">
+
+<div id="myDiv05">...</div>
