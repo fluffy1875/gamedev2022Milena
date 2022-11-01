@@ -68,31 +68,13 @@ Events are HTML code that activates Javascript code
                                           document.getElementById('myB03').innerHTML = 'This is null number'
                                           }" > This is a nice number </b>
 
-<br>
-<hr>
-
-
-
-<input type=text id="myText04" value="5"><br>
-
-<input type=button value="Double Click" ondrag="{
-                                                    document.getElementById('myDiv04').innerHTML = document.getElementById('myText04').value
-                                                    }">
-
-<div id="myDiv04">...</div>
-
-<b id="myB04" onclick="{
-                          document.getElementById('myB04').innerHTML = 'This is a nice number'
-                          }" onclick="{
-                                          document.getElementById('myB04').innerHTML = 'This is null number'
-                                          }" > This is a nice number </b>
-
 
 <br>
 <br>
 <hr>
 <br>
 <br>
+
 
 <form action="https://youtu.be/Up7TU2t7_8g" onsubmit="myFunction()">
   Enter name: <input type="text" name="fname">
@@ -157,5 +139,30 @@ function drop(event) {
   var data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
   document.getElementById("demo").innerHTML = "You have dropped this text!";
+}
+</script>
+
+  
+  
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  
+  
+  <style>
+#myDIV {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV" onmousewheel="myFunction()">something</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDIV").style.fontSize = "35px";
 }
 </script>
