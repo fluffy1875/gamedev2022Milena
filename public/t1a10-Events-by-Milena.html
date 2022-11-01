@@ -86,3 +86,23 @@ Events are HTML code that activates Javascript code
                           }" onclick="{
                                           document.getElementById('myB04').innerHTML = 'This is null number'
                                           }" > This is a nice number </b>
+
+
+<br>
+<hr>
+
+
+
+<input type=text id="myText05" value="5"><br>
+
+<input type=button value="Submit this thing" onsubmit="{
+                                                    document.getElementById('myDiv05').innerHTML = document.getElementById('myText05').value
+                                                    }">
+
+<div id="myDiv05">...</div>
+
+<b id="myB05" onsubmit="{
+                          document.getElementById('myB05').innerHTML = 'This is a nice number'
+                          }" onsubmit="{
+                                          document.getElementById('myB05').innerHTML = 'This is null number'
+                                          }" > This is a nice number </b>
