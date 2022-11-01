@@ -141,9 +141,13 @@ function drop(event) {
   document.getElementById("demo").innerHTML = "You have dropped this text!";
 }
 </script>
+  <br>
+  <br>
 
   
-  
+  <br>
+  <br>
+  <br>
   <br>
   <br>
   <hr>
@@ -153,16 +157,17 @@ function drop(event) {
   
   <style>
 #myDIV {
-  border: 1px solid black;
+  border: 1px solid lightblue;
 }
 </style>
 </head>
 <body>
 
-<div id="myDIV" onmousewheel="myFunction()">something</div>
+<div id="myDIV" onmousewheel="myFunction()">You can see the text written here is very small. 
+  So let's enlarge it! make it bigger by scrolling the mouse over the test here and see how it GROWS bigger and bigger!</div>
 
 <script>
 function myFunction() {
-  document.getElementById("myDIV").style.fontSize = "35px";
+  document.getElementById("myDIV").style.fontSize = "50px";
 }
 </script>
