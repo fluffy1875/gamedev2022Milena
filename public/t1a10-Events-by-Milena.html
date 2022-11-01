@@ -56,7 +56,7 @@ Events are HTML code that activates Javascript code
 
 <input type=text id="myText03" value="5"><br>
 
-<input type=button value="Example onClick" ondblclick="{
+<input type=button value="Double Click" ondblclick="{
                                                     document.getElementById('myDiv03').innerHTML = document.getElementById('myText03').value
                                                     }">
 
@@ -68,3 +68,21 @@ Events are HTML code that activates Javascript code
                                           document.getElementById('myB03').innerHTML = 'This is null number'
                                           }" > This is a nice number </b>
 
+<br>
+<hr>
+
+
+
+<input type=text id="myText04" value="5"><br>
+
+<input type=button value="Double Click" ondrag="{
+                                                    document.getElementById('myDiv04').innerHTML = document.getElementById('myText04').value
+                                                    }">
+
+<div id="myDiv04">...</div>
+
+<b id="myB04" onclick="{
+                          document.getElementById('myB04').innerHTML = 'This is a nice number'
+                          }" onclick="{
+                                          document.getElementById('myB04').innerHTML = 'This is null number'
+                                          }" > This is a nice number </b>
