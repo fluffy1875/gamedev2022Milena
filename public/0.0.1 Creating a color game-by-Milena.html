@@ -1,6 +1,6 @@
 <h1> Testing if the code works </h1>
 
-Version 0.0.1
+Version 0.0.2
 
 <style>
 .droptarget {
@@ -62,4 +62,50 @@ function drop(event) {
   <br>
   
   
-  something in this code.
+  <style>
+.droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 5px solid pink;
+}
+  
+  p1 {
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<p>Drag the text from one box to another box :</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p1 ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p1>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p id="demo"></p>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "You are dragging this text!";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "You have dropped this text!";
+}
+</script>
