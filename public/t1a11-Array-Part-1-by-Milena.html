@@ -1,4 +1,4 @@
-Version 0.0.5
+Version 0.0.6
 
 <h2 align= center> t1a11-Arrays-by-Milena.html</h2>
 
@@ -254,24 +254,19 @@ Crazy Decimal random number Arrays: <input type=text id="myText07" value="5"><br
 <hr>
 <br>
 <br>
-Array with decisions: <input type=text id="myText08" value="5"><br>
-
-<input type=button value="This is Array" onClick="{
-    let myThing = document.getElementById('myText08').value;
-    let mySum = ' '
-    document.getElementById('myDiv08').innerHTML = ' '
 
 
-myAr = new Array()
+<p id="demo"></p>
 
-for (i = 1; i <= 3; i++){
-                  if (i > 2){
-  myAr [i] = i
-  }
-  }
-    document.getElementById('myDiv08').innerHTML = mySum
-}">
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
 
-<div id="myDiv08">...</div>
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
 
-                                                 
+document.getElementById("demo").innerHTML = text;
+</script>
