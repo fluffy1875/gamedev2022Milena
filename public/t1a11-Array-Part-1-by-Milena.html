@@ -254,6 +254,12 @@ Crazy Decimal random number Arrays: <input type=text id="myText07" value="5"><br
 <hr>
 <br>
 <br>
+Array with decisions: <input type=text id="myText08" value="5"><br>
+
+<input type=button value="This is Array" onClick="{
+    let myThing = document.getElementById('myText08').value;
+    let mySum = ' '
+    document.getElementById('myDiv08').innerHTML = ' '
 
 
 myAr = new Array()
@@ -263,3 +269,9 @@ for (i = 1; i <= 3; i++){
   myAr [i] = i
   }
   }
+    document.getElementById('myDiv08').innerHTML = mySum
+}">
+
+<div id="myDiv08">...</div>
+
+                                                 
