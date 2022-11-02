@@ -1,4 +1,4 @@
-Version 0.0.6
+Version 0.0.7
 
 <h2 align=center> t2a02-objects-by-Milena.html</h2>
 
@@ -56,5 +56,42 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 
 <br>
+<br>
+<hr>
+<br>
+<br>
 
 
+Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
+
+<input type=button value="What properties does my cat have?" onClick="{
+                                                                
+                                                                let myCat = {
+                                                                'name'      : 'Gerry',
+                                                                'age'       : 2,
+                                                                'eyeColor'  : 'green',
+                                                                'furColor'  : 'grey, brown, ginger',
+                                                                'eyeType'   : 'sharp',
+                                                                'kittyWife' : 'Stacy',
+                                                                }
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML = '<br>my Cat <b>has</b> properties: <br>'
+                                                                      
+                                                                document.getElementById('myDiv02').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'You do the others <br> '
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'lastName: ' + myPerson.lastName + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'age: ' + myPerson.age + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'hairColor: ' + myPerson.hairColor + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'secondName: ' + myPerson.secondName + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'sibling: ' + myPerson.sibling + '<br>'
+                                                                }">
+       
+<div id="myDiv02">...</div>
