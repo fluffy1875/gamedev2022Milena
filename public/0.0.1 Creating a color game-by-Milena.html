@@ -1,6 +1,6 @@
 <h1> Testing if the code works </h1>
 
-Version 0.0.4
+Version 0.0.5
 
 <style>
 .droptarget {
@@ -69,7 +69,7 @@ function drop(event) {
   height: 35px;
   margin: 15px;
   padding: 10px;
-  border: 15px solid pink;
+  border: 15px solid blue;
 }
     .droptarget2 {
   float: left; 
@@ -77,11 +77,11 @@ function drop(event) {
   height: 35px;
   margin: 15px;
   padding: 10px;
-  border: 15px solid blue;
+  border: 15px solid green;
 }
   
-  p1 {
-    color: red;
+  p2 {
+    color: green;
   }
 </style>
 </head>
@@ -89,28 +89,28 @@ function drop(event) {
 
 <p>Drag the text from one box to another box :</p>
 
-<div class="droptarget1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <p1 ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p1>
+<div class="droptarget1" ondrop="dropAgain(event)" ondragover="dropAllow(event)">
+  <p2 ondragstart="startDrag(event)" ondrag="drag(event)" draggable="true" id="dragtarget">Drag me!</p2>
 </div>
 
-<div class="droptarget1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget1" ondrop="dropAgain(event)" ondragover="dropAllow(event)"></div>
 
 <p id="demo"></p>
 
 <script>
-function dragStart(event) {
+function startDrag(event) {
   event.dataTransfer.setData("Text", event.target.id);
 }
 
-function dragging(event) {
-  document.getElementById("demo").innerHTML = "You are dragging this text!";
+function drag(event) {
+  document.getElementById("demo").innerHTML = "You are dragging this thing";
 }
 
-function allowDrop(event) {
+function dropAllow(event) {
   event.preventDefault();
 }
 
-function drop(event) {
+function dropAgain(event) {
   event.preventDefault();
   var data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
