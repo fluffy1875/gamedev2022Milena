@@ -1,4 +1,4 @@
-Version 0.0.8
+Version 0.0.9
 
 <h2 align=center> t2a02-objects-by-Milena.html</h2>
 
@@ -62,34 +62,35 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <br>
 
 
-Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
-
-<input type=button value="What properties does my cat have?" onClick="{
+<input type=button value="Click here to see the properties" onClick="{
                                                                 
                                                                 let myCat = {
-                                                                'name'      : 'Gerry',
+                                                                'name' : 'Tommy',
+                                                                'eyeType'  : 'sharp',
                                                                 'age'       : 2,
                                                                 'eyeColor'  : 'green',
-                                                                'furColor'  : 'grey, brown, ginger',
-                                                                'eyeType'   : 'sharp',
-                                                                'kittyWife' : 'Stacy',
+                                                                'furColor' : 'black',
+                                                                'secondName': 'Toothless',
+                                                                'catWifey'   : 'Sabrina',
+                                                                'owner' : 'Ruldolf'
                                                                 }
-                                                                      
-                                                                document.getElementById('myDiv02').innerHTML = '<br>my Cat <b>has</b> properties: <br>'
-                                                                      
-                                                                document.getElementById('myDiv02').innerHTML += 'name: ' + myPerson.name + '<br>'
                                                                 
-                                                                document.getElementById('myDiv02').innerHTML += 'age: ' + myPerson.age + '<br>'
+                                                                document.getElementById('myDiv02').innerHTML = '<br>myCat has properties: <br>'
+                                                                document.getElementById('myDiv02').innerHTML += 'name: ' + myCat.name + '<br>'
                                                                 
-                                                                document.getElementById('myDiv02').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>'
+                                                                document.getElementById('myDiv02').innerHTML += 'eyeType: ' + myCat.eyeType + '<br>'
                                                                 
-                                                                document.getElementById('myDiv02').innerHTML += 'furColor: ' + myPerson.furColor + '<br>'
+                                                                document.getElementById('myDiv02').innerHTML += 'age: ' + myCat.age + '<br>'
                                                                 
-                                                                document.getElementById('myDiv02').innerHTML += 'eyeType: ' + myPerson.eyeType + '<br>'
+                                                                document.getElementById('myDiv02').innerHTML += 'eyeColor: ' + myCat.eyeColor + '<br>'
                                                                 
-                                                                document.getElementById('myDiv02').innerHTML += 'secondName: ' + myPerson.secondName + '<br>'
+                                                                document.getElementById('myDiv02').innerHTML += 'furColor: ' + myCat.furColor + '<br>'
                                                                 
-                                                                document.getElementById('myDiv02').innerHTML += 'kittyWife: ' + myPerson.kittyWife + '<br>'
+                                                                document.getElementById('myDiv02').innerHTML += 'secondName: ' + myCat.secondName + '<br>'
+                                                                
+                                                                document.getElementById('myDiv02').innerHTML += 'catWifey: ' + myCat.catWifey + '<br>'
+                                                                     
+                                                                document.getElementById('myDiv02').innerHTML += 'owner: ' + myCat.owner + '<br>'
                                                                 }">
        
 <div id="myDiv02">...</div>
