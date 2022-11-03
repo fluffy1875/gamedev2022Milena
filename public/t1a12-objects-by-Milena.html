@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2 align=center> t2a02-objects-by-Milena.html</h2>
 
@@ -65,14 +65,14 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 What do cats have? <input type=button value="Click here to see the properties" onClick="{
                                                                 
                                                                 let myCat = {
-                                                                'name' : 'Tommy',
-                                                                'eyeType'  : 'sharp',
-                                                                'age'       : 2,
-                                                                'eyeColor'  : 'green',
-                                                                'furColor' : 'black',
-                                                                'secondName': 'Toothless',
+                                                                'name'       : 'Tommy',
+                                                                'eyeType'    : 'sharp',
+                                                                'age'        : 2,
+                                                                'eyeColor'   : 'green',
+                                                                'furColor'   : 'black',
+                                                                'secondName' : 'Toothless',
                                                                 'catWifey'   : 'Sabrina',
-                                                                'owner' : 'Ruldolf'
+                                                                'owner'      : 'Ruldolf'
                                                                 }
                                                                 
                                                                 document.getElementById('myDiv02').innerHTML = '<br>myCat has properties: <br>'
@@ -126,7 +126,7 @@ How are ships made? <input type=button value="What does a ship have?" onClick="{
                                                                 
                                                                 document.getElementById('myDiv03').innerHTML += 'dateOfCreation: ' + myShip.dateOfCreation + '<br>'
                                                                 
-                                                                document.getElementById('myDiv03').innerHTML += ': color' + myShip.color + '<br>'
+                                                                document.getElementById('myDiv03').innerHTML += 'color: ' + myShip.color + '<br>'
                                                                 
                                                                 document.getElementById('myDiv03').innerHTML += 'edge: ' + myShip.edge + '<br>'
                                                                 
@@ -139,6 +139,49 @@ How are ships made? <input type=button value="What does a ship have?" onClick="{
 
 
 <div id="myDiv03">...</div>
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+What do physics have? <input type=button value="Physics Properties" onClick="{
+                                                                
+                                                                let myPhysics = {
+                                                                'name'            : 'Physics',
+                                                                'typeForceOne'    : 'Gravity',
+                                                                'typeForceTwo'    : 'Normal Force' ,
+                                                                'typeForceThree'  : 'Friction Force' ,
+                                                                'typeSymbolOne'   : 'A = acceleration',
+                                                                'typeSymbolTwo'   : 'V = velocity',
+                                                                'typeSymbolThree' : 'D = displacement',
+                                                                'creator'         : 'Isacc Newton'
+                                                                }
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML = '<br>myPhysics has properties: <br>'
+                                                                document.getElementById('myDiv04').innerHTML += 'name: ' + myPhysics.name + '<br>'
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML += 'typeForceOne: ' + myPhysics.typeForceOne + '<br>'
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML += 'typeForceTwo: ' + myPhysics.typeForceTwo + '<br>'
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML += ' typeForceThree: ' + myPhysics.typeForceThree + '<br>'
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML += 'typeSymbolOne: ' + myPhysics.typeSymbolOne + '<br>'
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML += 'typeSymbolTwo: ' + myPhysics.typeSymbolTwo + '<br>'
+                                                                
+                                                                document.getElementById('myDiv04').innerHTML += 'typeSymbolThree: ' + myPhysics.typeSymbolThree + '<br>'
+                                                                     
+                                                                document.getElementById('myDiv04').innerHTML += 'creator: ' + myPhysics.creator + '<br>'
+                                                                }">
+
+
+<div id="myDiv04">...</div>
 
 
 
