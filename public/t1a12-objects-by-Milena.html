@@ -1,4 +1,4 @@
-Version 0.0.9
+Version 0.0.2
 
 <h2 align=center> t2a02-objects-by-Milena.html</h2>
 
@@ -62,7 +62,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <br>
 
 
-<input type=button value="Click here to see the properties" onClick="{
+What do cats have? <input type=button value="Click here to see the properties" onClick="{
                                                                 
                                                                 let myCat = {
                                                                 'name' : 'Tommy',
@@ -94,6 +94,51 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
                                                                 }">
        
 <div id="myDiv02">...</div>
+
+
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+How are ships made? <input type=button value="What does a ship have?" onClick="{
+                                                                
+                                                                let myShip = {
+                                                                'name'            : 'Flying Boat',
+                                                                'typeMateriel'    : 'Metal',
+                                                                'dateOfCreation'  : 1/30/1988 ,
+                                                                'color'           : 'militery green',
+                                                                'edge'            : 'sharp',
+                                                                'abilities'       : 'Flying and swimming',
+                                                                'placeOfCreation' : 'Europe',
+                                                                'creator'         : 'MyBoiDude'
+                                                                }
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML = '<br>myShip has properties: <br>'
+                                                                document.getElementById('myDiv03').innerHTML += 'name: ' + myShip.name + '<br>'
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML += 'typeMateriel: ' + myShip.typeMateriel + '<br>'
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML += 'dateOfCreation: ' + myShip.dateOfCreation + '<br>'
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML += ': color' + myShip.color + '<br>'
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML += 'edge: ' + myShip.edge + '<br>'
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML += 'abilities: ' + myShip.abilities + '<br>'
+                                                                
+                                                                document.getElementById('myDiv03').innerHTML += 'placeOfCreation: ' + myShip.placeOfCreation + '<br>'
+                                                                     
+                                                                document.getElementById('myDiv03').innerHTML += 'creator: ' + myShip.creator + '<br>'
+                                                                }">
+
+
+<div id="myDiv03">...</div>
 
 
 
