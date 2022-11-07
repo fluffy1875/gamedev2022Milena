@@ -1,0 +1,31 @@
+Version 0.0.1
+<h2 align=center> This is classes part 2 </h2>
+
+<script>
+  
+  class myAnimal {
+    constructor (passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName+'<br>'
+    }
+  }//end class myAnimal
+  
+</script>
+
+Version 0.0.1
+<h2 align=center>t2a02-extend-class-by-Milena.html</h2>
+
+Extending a pre-existing Class<br>
+
+<h4> Example Class extand code</h4>
+<pre>
+
+  class myCat extends myAnimal {
+    myShow(){
+      document.getElementById('myDiv01').innerHTML = this.myName
+    }
+}
+</pre>
