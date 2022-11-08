@@ -66,10 +66,10 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <script>
   
-  class myAnimal {
+  class myPerson {
     constructor (passName, passColor) {
       this.myName = passName;
-      this.myAge = passColor;
+      this.myColor = passColor;
     }
     myShow(){
       document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName+'<br>'
@@ -84,8 +84,8 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <input type=button value="Example Class Set" onClick="{
                                                                             
-                                                                            myDog = new myAnimal('Snickers', 'blue')
-                                                                            myDog.myShow()
+                                                                            myBoy = new myPerson('Snickers', 'blue')
+                                                                            myBoy.myShow()
                                                                             
                                                                             }">
 
@@ -94,14 +94,14 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
 
 <input type=button value="Example Extend Class Animal" onClick="{
                                                                 
-                                                                class myCat extends myAnimal{
+                                                                class myBoi extends myAnimal{
                                                                 myShow(){
-                                                                document.getElementById('myDiv02').innerHTML = this.myName +' is a great cat<br>'
+                                                                document.getElementById('myDiv02').innerHTML = this.myName +' is a great boi<br>'
                                                                 }
                                                                 } //end extended class myCat
                                                                 
-                                                                myPet = new myCat('Fluffy', 14)
-                                                                myPet.myShow()
+                                                                mySon = new myBoi('Doode', 15)
+                                                                mySon.myShow()
                                                                 }">
 
 <div id="myDiv02">...</div>
