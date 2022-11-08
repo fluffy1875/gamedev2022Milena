@@ -68,3 +68,30 @@ Nothing: <input type=text id="myText02"><br>
 <div id="myDiv02">...</div>
 
                 
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+Nothing: <input type=text id="myText03"><br>
+
+<input type=button value="Examples Class Set" onClick="{
+                                                                             class mySong {
+                                                                                constructor(passName,passTheme){
+                                                                                    this.myName = passName;
+                                                                                    this.myTheme = passTheme;
+                                                                             }
+                                                                             myShow(){
+                                                                                      document.getElementById('myDiv03').innerHTML = 'Hello '+ this.myName + '. You are a ' + this.myTheme + ' theme'<br>'
+                                                                             }
+                                                                             } // end class myAnimal
+                                                                             
+                                                                             myMusic = new myPerson('Insomia', 'Gentle')
+                                                                             myMusic.myShow()
+                                                                             
+                                                                             }">
+
+<div id="myDiv03">...</div>
+
+                
