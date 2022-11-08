@@ -1,4 +1,4 @@
-Version 0.0.3
+Version 0.0.4
 
 <h2 align=center>t2a03-Classes-by-Milena.html</h2>
 
@@ -46,20 +46,21 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <hr>
 <br>
 <br>
-This is my First constructor: <input type=text id="myText02"><br> 
 
-<input type=button value="This shall now be a default greeting" onClick="{
+Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
+
+<input type=button value="Examples Class Set" onClick="{
                                                                              class myPerson {
-                                                                                constructor(passName,passInterest){
+                                                                                constructor(passName,passHobby){
                                                                                     this.myName = passName;
-                                                                                    this.myInterest = passInterest;
+                                                                                    this.myAge = passHobby;
                                                                              }
                                                                              myShow(){
-                                                                                      document.getElementById('myDiv02').innerHTML = 'You! YES YOU!!! '+ this.myName + '. You are interested in ' + this.myInterest + ' And nothing else... UNDERSTAND???????!!!!!!!!<br>'
+                                                                                      document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myHobby + ' years old<br>'
                                                                              }
-                                                                             } 
+                                                                             } // end class myAnimal
                                                                              
-                                                                             myBoy = new myPerson('BOI 6000', Chocolate)
+                                                                             myBoy = new myPerson('Snickers', 'BasketBall')
                                                                              myBoy.myShow()
                                                                              
                                                                              }">
