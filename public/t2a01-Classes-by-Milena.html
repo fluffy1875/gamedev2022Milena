@@ -1,4 +1,4 @@
-Version 0.0.9
+Version 0.0.2
 
 <h2 align=center>t2a03-Classes-by-Milena.html</h2>
 
@@ -74,4 +74,22 @@ Nothing: <input type=text id="myText02"><br>
 <br>
 <br>
 
+Nothing: <input type=text id="myText03"><br>
 
+<input type=button value="This is a Music /Song thing." onClick="{
+                                                                             class mySong {
+                                                                                constructor(passSongName,passTheme){
+                                                                                    this.mySongName = passSongName;
+                                                                                    this.myTheme = passTheme;
+                                                                             }
+                                                                             myShow(){
+                                                                                      document.getElementById('myDiv03').innerHTML = 'Hello '+ this.mySongName + '. You are a ' + this.myTheme + ' player<br>'
+                                                                             }
+                                                                             } // end class myAnimal
+                                                                             
+                                                                             myMusic = new myPerson('SongName', 'gentle')
+                                                                             myMusic.myShow()
+                                                                             
+                                                                             }">
+
+<div id="myDiv03">...</div>
