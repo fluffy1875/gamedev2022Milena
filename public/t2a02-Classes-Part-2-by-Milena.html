@@ -137,34 +137,36 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
   class myJamie {
     constructor (passFirstName, passColor) {
       this.myName = passFirstName;
-      this.myAge = passColor;
+      this.myColor = passColor;
     }
     myShow(){
-      document.getElementById('myDiv03').innerHTML = 'Hello the name should show here ... '+ this.myName+'<br>'
+      document.getElementById('myDiv03').innerHTML = 'This is my name '+ this.myName+ '. Yes that is my name <br>'
     }
   }
   
 </script>
 
-<h4> Jamie with blue color </h4>
+<h4> Jamie with blue color </h4> <br>
+<br>
+<br>
+<br>
 
-<input type=button value="Class that shows Jamie with blue color" onClick="{
+Jamie with blue eyes : <input type=button value="Class that shows Jamie with blue eye color" onClick="{
                                                                             
                                                                             myJamie = new myJamie('Jamie', 'blue')
                                                                             myJamie.myShow()
                                                                             
                                                                             }">
 
-<h4> The example of jamie extension code with him liking cats.</h4>
-
+<p> extension </p>
 
 Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
 
 <input type=button value="Example Extend Jamie with cats" onClick="{
                                                                 
-                                                                class myJamie extends myJamie{
+                                                                class myJamieBoy extends myJamie{
                                                                 myShow(){
-                                                                document.getElementById('myDiv03').innerHTML = this.myName +' is a color<br>'
+                                                                document.getElementById('myDiv03').innerHTML = ' + this.myName +' has a '<br>'
                                                                 }
                                                                 } 
                                                                 
