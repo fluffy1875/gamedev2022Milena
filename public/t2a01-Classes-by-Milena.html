@@ -83,13 +83,41 @@ Nothing: <input type=text id="myText03"><br>
                           this.myTheme = passTheme;
                    }
                    myTell(){
-                            document.getElementById('myDiv03').innerHTML = 'Hello '+ this.mySongName + '. You are a ' + this.myTheme + ' player<br>'
+                            document.getElementById('myDiv03').innerHTML = 'Hello, this piece is called '+ this.mySongName + '. This theme is very ' + this.myTheme + ' . This is a very beautiful piece.<br>'
                    }
                    }
 
-                   myMusic = new mySong('Song Name', 'gentle')
+                   myMusic = new mySong('Charecter's Theme', 'gentle')
                    myMusic.myTell()
 
                    }">
 
 <div id="myDiv03">...</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+Nothing: <input type=text id="myText04"><br>
+
+3 contructor theme: <input type=button value="This is a 3 constructor special sport thing." onClick="{
+                   class mySports {
+                      constructor(passSportBaseBall, passSportFootBall, passSportArchery){
+                          let this.mySportBaseBall = passSportBaseBall;
+                          let this.mySportFootBall = passSportFootBall;
+                          let this.mySportArchery = passSportArchery;
+                   }
+                   myShow(){
+                            document.getElementById('myDiv04').innerHTML = 'Hello, These are your favorite sports '+ this.mySportBaseBall + ', ' + this.mySportFootBall + ', ' + this.mySportArchery + ' player<br>'
+                   }
+                   }
+
+                   mySport = new mySports('Baseball', 'Football', 'Archery')
+                   mySport.myShow()
+
+                   }">
+
+<div id="myDiv04">...</div>
