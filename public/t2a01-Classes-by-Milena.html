@@ -74,25 +74,26 @@ Nothing: <input type=text id="myText02"><br>
 <br>
 <br>
 
-Nothing: <input type=text id="myText03"><br>
+Something new: <input type=text id="myText03"><br>
 
-<input type=button value="This is a Music /Song thing." onClick="{
-                   class mySong {
-                      constructor(passSongName,passTheme){
-                          this.mySongName = passSongName;
-                          this.myTheme = passTheme;
-                   }
-                   myTell(){
-                            document.getElementById('myDiv03').innerHTML = 'Hello, this piece is called '+ this.mySongName + '. This theme is very ' + this.myTheme + ' . This is a very beautiful piece.<br>'
-                   }
-                   }
+<input type=button value="Example music class set" onClick="{
+                         class myMusic {
+                            constructor(passSongName,passTheme){
+                                this.mySong = passSongName;
+                                this.myTheme = passTheme;
+                         }
+                         myShow(){
+                                  document.getElementById('myDiv03').innerHTML = 'Hello '+ this.mySong + '. You are a ' + this.myTheme + ' player<br>'
+                         }
+                         } 
 
-                   myStyle = new mySong('Charecter's Theme', 'gentle')
-                   mystyle.myTell()
+                         myBoy = new myMusic('DOODE', 'BasketBall')
+                         myBoy.myShow()
 
-                   }">
+                         }">
 
 <div id="myDiv03">...</div>
+
 
 
 <br>
