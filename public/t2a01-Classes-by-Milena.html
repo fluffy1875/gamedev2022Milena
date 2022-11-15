@@ -107,16 +107,17 @@ Something new: <input type=text id="myText03"><br>
 
 <input type=button value="Example Sport class set" onClick="{
                          class mySport {
-                            constructor(passSportBaseball,passSportBaketball){
+                            constructor(passSportBaseball,passSportBaketball,passSportArchery)
                                 this.myBaseball = passSportBaseball;
                                 this.myBaketball = passSportBaketball;
+                                this.myArchery = passSportArchery;
                          }
                          myShow(){
-                                  document.getElementById('myDiv04').innerHTML = 'Hello, this piece is called '+ this.myBaseball + '. You are a ' + this.myBaketball + ' player<br>'
+                                  document.getElementById('myDiv04').innerHTML = 'Hello, this piece is called '+ this.myBaseball + '. You are a ' + this.myArchery + ' player<br>'
                          }
                          } 
 
-                         myBoy = new mySport('Baseball', 'Basketball')
+                         myBoy = new mySport('Baseball', 'Basketball', 'Archery')
                          myBoy.myShow()
 
                          }">
