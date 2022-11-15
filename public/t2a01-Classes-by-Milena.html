@@ -74,7 +74,7 @@ Nothing: <input type=text id="myText02"><br>
 <br>
 <br>
 
-
+Something new: <input type=text id="myText03"><br>
 
 <input type=button value="Example music class set" onClick="{
                          class myMusic {
@@ -106,17 +106,17 @@ Nothing: <input type=text id="myText02"><br>
 3 contructor theme: <input type=button value="This is a 3 constructor special sport thing." onClick="{
                    class mySports {
                       constructor(passSportBaseBall, passSportFootBall, passSportArchery){
-                          let this.mySportBaseBall = passSportBaseBall;
-                          let this.mySportFootBall = passSportFootBall;
-                          let this.mySportArchery = passSportArchery;
+                          let this.myBaseBall = passSportBaseBall;
+                          let this.myFootBall = passSportFootBall;
+                          let this.myArchery = passSportArchery;
                    }
                    myShow(){
-                            document.getElementById('myDiv04').innerHTML = 'Hello, These are your favorite sports '+ this.mySportBaseBall + ', ' + this.mySportFootBall + ', ' + this.mySportArchery + ' you, are a fit player<br>'
+                            document.getElementById('myDiv04').innerHTML = 'Hello, These are your favorite sports '+ this.myBaseBall + ', ' + this.myFootBall + ', ' + this.myArchery + ' you, are a fit player<br>'
                    }
                    }
 
-                   mySports = new mySports('Baseball', 'Football', 'Archery')
-                   mySports.myShow()
+                   mySport = new mySports('Baseball', 'Football', 'Archery')
+                   mySport.myShow()
 
                    }">
 
