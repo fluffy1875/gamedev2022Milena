@@ -103,21 +103,22 @@ Something new: <input type=text id="myText03"><br>
 <br>
 
 
-3 contructor theme: <input type=button value="This is a 3 constructor special sport thing." onClick="{
-                   class mySports {
-                      constructor(passSportBaseBall, passSportFootBall, passSportArchery){
-                          let this.myBaseBall = passSportBaseBall;
-                          let this.myFootBall = passSportFootBall;
-                          let this.myArchery = passSportArchery;
-                   }
-                   myShow(){
-                            document.getElementById('myDiv04').innerHTML = 'Hello, These are your favorite sports '+ this.myBaseBall + ', ' + this.myFootBall + ', ' + this.myArchery + ' you, are a fit player<br>'
-                   }
-                   }
+Something new: <input type=text id="myText03"><br>
 
-                   mySport = new mySports('Baseball', 'Football', 'Archery')
-                   mySport.myShow()
+<input type=button value="Example Sport class set" onClick="{
+                         class mySport {
+                            constructor(passSportBaseball,passSportBaketball){
+                                this.myBaseball = passSportBaseball;
+                                this.myBaketball = passSportBaketball;
+                         }
+                         myShow(){
+                                  document.getElementById('myDiv04').innerHTML = 'Hello, this piece is called '+ this.myBaseball + '. You are a ' + this.myBaketball + ' player<br>'
+                         }
+                         } 
 
-                   }">
+                         myBoy = new mySport('Baseball', 'Basketball')
+                         myBoy.myShow()
+
+                         }">
 
 <div id="myDiv04">...</div>
