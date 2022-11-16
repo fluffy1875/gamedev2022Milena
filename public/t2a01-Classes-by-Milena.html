@@ -1,4 +1,4 @@
-Version 0.0.4
+Version 0.0.5
 
 <h2 align=center>t2a03-Classes-by-Milena.html</h2>
 
@@ -151,3 +151,34 @@ Something new: <input type=text id="myText05"><br>
                          }">
 
 <div id="myDiv05">...</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+Something new: <input type=text id="myText06"><br>
+
+<input type=button value="Example Interests class set" onClick="{
+                         class myInterest {
+                            constructor(passInterestCake,passInterestCooking,passInterestRock,passInterestGuitar,passInterestSpagettie){
+                                this.myCake = passInterestCake;
+                                this.myCooking = passInterestCooking;
+                                this.myRock = passInterestRock;
+                                this.myGuitar = passInterestGuitar;
+                                this.mySpagettie = passInterestSpagettie;
+                         }
+                         myShow(){
+                                  document.getElementById('myDiv06').innerHTML = 'Hello, You are a '+ this.myCake + ' player. And you are also a ' + this.myCooking + ' player. You are also a '+ this.myRock + ', good for you! You also love '+ this.myGuitar + ' And you also love ' + this.mySpagettie + ' Good for you <br>'
+                         }
+                         } 
+
+                         myBou = new mySports('Cake', 'Cooking', 'Rock', 'Guitar', 'Spagettie')
+                         myBou.myShow()
+
+                         }">
+
+<div id="myDiv06">...</div>
