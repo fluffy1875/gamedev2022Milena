@@ -133,7 +133,7 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
       this.myName = passName;
       this.myEye = passEye;
     }
-    myShow(){
+    myTell(){
       document.getElementById('myDiv03').innerHTML = 'Hello, my name is '+ this.myName+' yes that is my name. And i have '+ this.myEye+' Eyes <br>'
     }
   }
@@ -157,13 +157,13 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
 <input type=button value="Example Extend Class Animal" onClick="{
                                                                 
                                                                 class myBoi extends myAnimal{
-                                                                myShow(){
+                                                                myTell(){
                                                                 document.getElementById('myDiv03').innerHTML = this.myName +' is a great boi<br>'
                                                                 }
-                                                                } //end extended class myCat
+                                                                } 
                                                                 
-                                                                mySon = new myBoi('Doode', 15)
-                                                                mySon.myShow()
+                                                                mySon = new myBoi('Sniff', 'Food')
+                                                                mySon.myTell()
                                                                 }">
 
 <div id="myDiv03">...</div>
