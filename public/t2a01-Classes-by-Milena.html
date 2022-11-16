@@ -1,4 +1,4 @@
-Version 0.0.3
+Version 0.0.4
 
 <h2 align=center>t2a03-Classes-by-Milena.html</h2>
 
@@ -122,3 +122,32 @@ Something new: <input type=text id="myText04"><br>
                          }">
 
 <div id="myDiv04">...</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+Something new: <input type=text id="myText05"><br>
+
+<input type=button value="Example Sports class set" onClick="{
+                         class mySports {
+                            constructor(passSportBaseBall,passSportBasketBall,passSportArchery){
+                                this.myBaseBall = passSportBaseBall;
+                                this.myBasketBall = passSportBasketBall;
+                                this.myArchery = passSportArchery;
+                         }
+                         myShow(){
+                                  document.getElementById('myDiv05').innerHTML = 'Hello, You are a '+ this.myBaseBall + ' player. And you are also a ' + this.myBasketBall + ' player. You are also a '+ this.myArchery + ', good for you <br>'
+                         }
+                         } 
+
+                         myBoi = new mySports('Baseball', 'Basketball', 'Archery')
+                         myBoi.myShow()
+
+                         }">
+
+<div id="myDiv05">...</div>
