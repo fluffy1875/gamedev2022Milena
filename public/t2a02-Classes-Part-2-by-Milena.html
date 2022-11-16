@@ -129,8 +129,8 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
 <script>
   
   class myJamie {
-    constructor (passNameJamie, passEye) {
-      this.myJamie = passNameJamie;
+    constructor (passName, passEye) {
+      this.myName = passName;
       this.myEye = passEye;
     }
     myTell(){
@@ -146,7 +146,7 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
 
 <input type=button value="Example Class Set" onClick="{
                                                                             
-                                        myBoi = new myPerson('Jamie', 'blue')
+                                        myBoi = new myJamie('Jamie', 'blue')
                                         myBoi.myShow()
 
                                         }">
