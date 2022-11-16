@@ -1,4 +1,4 @@
-Version 0.0.8
+Version 0.0.9
 
 <h2 align=center>t2a03-Classes-by-Milena.html</h2>
 
@@ -103,21 +103,21 @@ Something new: <input type=text id="myText03"><br>
 <br>
 
 
-Something new: <input type=text id="myText03"><br>
+Something new: <input type=text id="myText04"><br>
 
-<input type=button value="Example Sport class set" onClick="{
-                         class mySport {
-                            constructor(passSportBaseball,passSportBaketball,passSportArchery)
-                                this.myBaseball = passSportBaseball;
-                                this.myArchery = passSportArchery;
+<input type=button value="Example Sports class set" onClick="{
+                         class mySports {
+                            constructor(passSportBaseBall,passSportBasketBall){
+                                this.myBaseBall = passSportBaseBall;
+                                this.myBasketBall = passSportBasketBall;
                          }
                          myShow(){
-                                  document.getElementById('myDiv04').innerHTML = 'Hello, this piece is called '+ this.myBaseball + '. You ar a ' + this.myArchery + ' player<br>'
+                                  document.getElementById('myDiv04').innerHTML = 'Hello, this piece is called '+ this.myBaseBall + '. You are a ' + this.myBasketBall + ' player<br>'
                          }
                          } 
 
-                         myBoy = new mySport('Baseball', 'Archery')
-                         myBoy.myShow()
+                         myBoi = new myMusic('Baseball', 'Basketball')
+                         myBoi.myShow()
 
                          }">
 
