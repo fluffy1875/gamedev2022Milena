@@ -15,7 +15,7 @@
   
 </script>
 
-Version 0.0.6
+Version 0.0.7
 <h2 align=center>t2a02-extend-class-by-Milena.html</h2>
 
 Extending a pre-existing Class<br>
@@ -129,10 +129,9 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
 <script>
   
   class myJamie {
-    constructor (passName, passEye, passHobby) {
+    constructor (passName, passEye) {
       this.myName = passName;
       this.myEye = passEye;
-      this.myHobby = passHobby;
     }
     myShow(){
       document.getElementById('myDiv03').innerHTML = 'Hello, my name is '+ this.myName+' yes that is my name. And i have '+ this.myEye+' Eyes <br>'
@@ -159,7 +158,7 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
                                                                 
                                                                 class myBoi extends myJamie{
                                                                 myTell(){
-                                                                document.getElementById('myDiv03').innerHTML = this.myName +' is a great boi, and he loves'+ this.myHobby+ '<br>'
+                                                                document.getElementById('myDiv03').innerHTML = this.myName +' is a great boi, and he loves '+ this.myEye+ '<br>'
                                                                 }
                                                                 } 
                                                                 
