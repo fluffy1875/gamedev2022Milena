@@ -15,7 +15,7 @@
   
 </script>
 
-Version 0.0.7
+Version 0.0.8
 <h2 align=center>t2a02-extend-class-by-Milena.html</h2>
 
 Extending a pre-existing Class<br>
@@ -167,6 +167,63 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
                                                                 }">
 
 <div id="myDiv03">...</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+
+
+
+<script>
+  
+  class myHorse {
+    constructor (passColor, passBreed) {
+      this.myColor = passColor;
+      this.myBreed = passBreed;
+    }
+    myShow(){
+      document.getElementById('myDiv04').innerHTML = 'Hello, my name is '+ this.myColor+' yes that is my name. And i have '+ this.myBreed+' Eyes <br>'
+    }
+  }
+  
+</script>
+
+
+<input type=button value="Example Class Set" onClick="{
+                                                                            
+                                        myBoi = new myJamie('White', 'Lusitano')
+                                        myBoi.myShow()
+
+                                        }">
+
+<h4> Example extending Class code</h4>
+Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
+
+<input type=button value="Example Extend Class Animal" onClick="{
+                                                                
+                                                                class myBoi extends myJamie{
+                                                                myTell(){
+                                                                document.getElementById('myDiv03').innerHTML = this.myName +' is a great boi, and he loves '+ this.myEye+ '<br>'
+                                                                }
+                                                                } 
+                                                                
+                                                                mySon = new myBoi('Sniff', 'Food')
+                                                                mySon.myTell()
+                                                                }">
+
+<div id="myDiv03">...</div>
+
+
+
+
+
 
 
 
