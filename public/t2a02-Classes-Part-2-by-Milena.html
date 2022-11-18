@@ -15,7 +15,7 @@
   
 </script>
 
-Version 0.0.6
+Version 0.0.7
 <h2 align=center>t2a02-extend-class-by-Milena.html</h2>
 
 Extending a pre-existing Class<br>
@@ -209,13 +209,13 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
 <input type=button value="Example Extend Class Animal" onClick="{
                                                                 
                                                                 class myPony extends myHorse{
-                                                                myTell(){
+                                                                myShow(){
                                                                 document.getElementById('myDiv04').innerHTML = this.myName +' is a great boi, and he loves '+ this.myEye+ '<br>'
                                                                 }
                                                                 } 
                                                                 
                                                                 myPony = new myHorse('Grey', 'Fun Fact')
-                                                                myPony.myTell()
+                                                                myPony.myShow()
                                                                 }">
 
 <div id="myDiv04">...</div>
