@@ -1,4 +1,4 @@
-<h2> Version 0.0.7 </h2>
+<h2> Version 0.0.8 </h2>
 
 <hr>
 <h1 align=center>t2a06-spy-name.html</h1>
@@ -34,32 +34,31 @@
 <hr>
 <br>
 <br>
+ 
 
-
-<textarea id="myArea03" rows=4 cols=70>Hello how are you</textarea><br> 
+<textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
 
 
 <input type=button value="encrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea03').value.toLowerCase().split('')
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'e') {myTemp  = 'f'} 
       if (myString[myLoop] == 'h') {myTemp  = 'i'} 
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea04').value = myString.join('')
+   document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
 
 
 
-<textarea id="myArea04" rows=4 cols=70></textarea><br> 
+<textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
    alert('Sorry, you have to do this!')
 }"><br><br>
 
 
-<textarea id="myArea05" rows=4 cols=70></textarea><br>
-
+<textarea id="myArea03" rows=4 cols=70></textarea><br> 
 
