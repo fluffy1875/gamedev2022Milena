@@ -1,4 +1,4 @@
-<h2> Version 0.0.2 </h2>
+<h2> Version 0.0.3 </h2>
 
 <hr>
 <h1 align=center>t2a06-spy-name.html</h1>
@@ -34,3 +34,33 @@
 
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
+
+
+<hr>
+
+
+<textarea id="myArea03" rows=4 cols=70>Good morning</textarea><br> 
+
+
+<input type=button value="Destroy the code" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea03').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'e') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea04').value = myString.join('')
+}"><br><br>
+
+
+
+<textarea id="myArea04" rows=4 cols=70></textarea><br> 
+
+<input type=button value="Decode" onclick="{
+   Something
+}"><br><br>
+
+
+<textarea id="myArea05" rows=4 cols=70></textarea><br> 
