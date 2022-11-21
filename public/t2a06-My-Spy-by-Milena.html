@@ -1,4 +1,4 @@
-version 0.0.4
+version 0.0.5
 
 <br>
 <br>
@@ -51,8 +51,7 @@ version 0.0.4
 
 <input type=button value="decrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea01').value.toLowerCase().split('')
-    myString = document.getElementById('myArea01').value.toLowerCase().split('')
+    myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'a') {myTemp  = 'z'} 
@@ -83,7 +82,7 @@ version 0.0.4
       if (myString[myLoop] == 'z') {myTemp  = 'a'} 
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea02').value = myString.join('')
+   document.getElementById('myArea03').value = myString.join('')
 }"><br><br>
 
 
