@@ -15,7 +15,7 @@
   
 </script>
 
-Version 0.0.9
+Version 0.0.2
 <h2 align=center>t2a02-extend-class-by-Milena.html</h2>
 
 Extending a pre-existing Class<br>
@@ -175,12 +175,6 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
 <br>
 <br>
 
-
-
-
-
-
-
 <script>
   
   class myHorse {
@@ -219,6 +213,53 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
                                                                 }">
 
 <div id="myDiv04">...</div>
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<script>
+  
+  class myFruit {
+    constructor (passType, passFruit) {
+      this.myType = passType;
+      this.myFruit = passFruit;
+    }
+    myShow(){
+      document.getElementById('myDiv05').innerHTML = 'This seems like a '+ this.myType+'. '+ this.myFruit+'. But what if i told you that it is not actually white <br>'
+    }
+  }
+  
+</script>
+
+
+<input type=button value="Example Class Set" onClick="{
+                                                                            
+                                        myFruit = new myHorse('Red', 'Apple')
+                                        myFruit.myShow()
+
+                                        }">
+
+<h4> Example extending Class code</h4>
+Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
+
+<input type=button value="Example Extend Class Animal" onClick="{
+                                                                
+                                                                class myPony extends myHorse{
+                                                                myShow(){
+                                                                document.getElementById('myDiv05').innerHTML = ''+this.myColor +' This horse is actually grey. That is a '+ this.myBreed+ ' for you!<br>'
+                                                                }
+                                                                } 
+                                                                
+                                                                myThing = new myFruit('Tastey', 'Crispy')
+                                                                myThing.myShow()
+                                                                }">
+
+<div id="myDiv05">...</div>
 
 
 
