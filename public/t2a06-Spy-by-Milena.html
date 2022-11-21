@@ -1,4 +1,4 @@
-<h2> Version 0.0.3 </h2>
+<h2> Version 0.0.4 </h2>
 
 <hr>
 <h1 align=center>t2a06-spy-name.html</h1>
@@ -43,10 +43,10 @@
 
 
 <input type=button value="Destroy the code" onclick="{
-   let myTemp = ''
+   let mySpeed = ''
    myString = document.getElementById('myArea03').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
-      myTemp = myString[myLoop]
+      mySpeed = myString[myLoop]
       if (myString[myLoop] == 'e') {myTemp  = 'f'} 
       if (myString[myLoop] == 'h') {myTemp  = 'i'} 
       myString[myLoop] = myTemp
@@ -56,9 +56,9 @@
 
 
 
-<textarea id="myArea04" rows=4 cols=70></textarea><br> 
+<textarea id="myArea04" rows=4 cols=70>Let's hope it will work</textarea><br> 
 
-<input type=button value="Decode" onclick="{
+<input type=button value="Change the code" onclick="{
    Something
 }"><br><br>
 
