@@ -15,7 +15,7 @@
   
 </script>
 
-Version 0.0.5
+Version 0.0.6
 <h2 align=center>t2a02-extend-class-by-Milena.html</h2>
 
 Extending a pre-existing Class<br>
@@ -51,7 +51,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
                                                                 }
                                                                 } //end extended class myCat
                                                                 
-                                                                myPet = new myCat('Fluffy', 14)
+                                                                myPet = new myCat('Fluffy', 5)
                                                                 myPet.myShow()
                                                                 }">
 
@@ -74,7 +74,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
     myShow(){
       document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName+'<br>'
     }
-  }//end class myAnimal
+  }
   
 </script>
 
@@ -82,7 +82,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <h4> Example working Classes code </h4>
 
-<input type=button value="Example Class Set" onClick="{
+<input type=button value="Person class" onClick="{
                                                                             
                                                                             myBoy = new myPerson('Snickers', 'blue')
                                                                             myBoy.myShow()
@@ -90,9 +90,9 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
                                                                             }">
 
 <h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
+<br>
 
-<input type=button value="Example Extend Class Animal" onClick="{
+<input type=button value="Example Extended Person Class" onClick="{
                                                                 
                                                                 class myBoi extends myAnimal{
                                                                 myShow(){
@@ -144,7 +144,7 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
 
 <h4> Example working Classes code </h4>
 
-<input type=button value="Example Class Set" onClick="{
+<input type=button value="Example Jamie Class" onClick="{
                                                                             
                                         myBoi = new myJamie('Jamie', 'blue')
                                         myBoi.myShow()
@@ -152,9 +152,9 @@ Nothing: <input type=text id="myText02" value="Useless at the moment"><br>
                                         }">
 
 <h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
+<br>
 
-<input type=button value="Example Extend Class Animal" onClick="{
+<input type=button value="Example Extend Jamie Class" onClick="{
                                                                 
                                                                 class myBoi extends myJamie{
                                                                 myTell(){
@@ -190,7 +190,7 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
 </script>
 
 
-<input type=button value="Example Class Set" onClick="{
+<input type=button value="Example Horse Class" onClick="{
                                                                             
                                         myPony = new myHorse('White', 'Lusitano')
                                         myPony.myShow()
@@ -198,9 +198,9 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
                                         }">
 
 <h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
+<br>
 
-<input type=button value="Example Extend Class Animal" onClick="{
+<input type=button value="Example Extend Horse Class" onClick="{
                                                                 
                                                                 class myPony extends myHorse{
                                                                 myShow(){
@@ -238,17 +238,17 @@ Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
 </script>
 
 
-<input type=button value="Example Class Set" onClick="{
+<input type=button value="Example Fruit Class" onClick="{
                                                                             
                                         myFood = new myFruit('Red', 'Apple', 'Tastey')
                                         myFood.myShow()
 
                                         }">
 
-<h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText03" value="Useless at the moment"><br>
+<h4> Example Extended Fruit Class</h4>
+<br>
 
-<input type=button value="Example Extend Class Animal" onClick="{
+<input type=button value="Example Extend Fruit Class" onClick="{
                                                                 
                                                                 class myFood extends myFruit{
                                                                 myShow(){
