@@ -1,4 +1,4 @@
-<p> version 0.0.8 </p>
+<p> version 0.0.9 </p>
 
 
 
@@ -27,26 +27,48 @@
 }">
 
 <script>
-function leftArrowPressed() {
-            let element = document.getElementById("myImage01");
-            element.style.left = parseInt(element.style.left) - 5 + 'px';
-            }
-   
-function rightArrowPressed() {
-            let element = document.getElementById("myImage01");
-            element.style.left = parseInt(element.style.left) + 5 + 'px';
-            }
-   
-function upArrowPressed() {
-            let element = document.getElementById("myImage01");
-            element.style.top = parseInt(element.style.top) - 5 + 'px';
-            }
-   
-function downArrowPressed() {
-            let element = document.getElementById("myImage01");
-            element.style.top = parseInt(element.style.top) + 5 + 'px';
-            }
-   </script>
+      function leftArrowPressed() {
+        var element = document.getElementById("myImage01");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+      }
+
+      function rightArrowPressed() {
+        var element = document.getElementById("myImage01");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+      }
+
+      function upArrowPressed() {
+        var element = document.getElementById("myImage01");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+      }
+
+      function downArrowPressed() {
+        var element = document.getElementById("myImage01");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+      }
+
+      function moveSelection(evt) {
+        switch (evt.keyCode) {
+          case 37:
+            leftArrowPressed();
+            break;
+          case 39:
+            rightArrowPressed();
+            break;
+          case 38:
+            upArrowPressed();
+            break;
+          case 40:
+            downArrowPressed();
+            break;
+        }
+      };
+
+      function docReady() {
+        window.addEventListener('keydown', moveSelection);
+      }
+    </script>
 
 <img id="myImage01" style="position:relative; width:120px; height:100px; top:0px; left:0px;" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png">
 
