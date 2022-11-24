@@ -1,4 +1,4 @@
-<p> Version 0.0.2 </p>
+<p> Version 0.0.3 </p>
 
 <br>
 <br>
@@ -29,6 +29,21 @@
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 30 + 'px'
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 30 + 'px'
 }">   
+   
+<input type=button value="Image Right and down" onclick="{
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 30 + 'px'
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 30 + 'px'
+}">   
+   
+<input type=button value="Image left and up" onclick="{
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 30 + 'px'
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 30 + 'px'
+}">  
+   
+<input type=button value="Image left and down" onclick="{
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 30 + 'px'
+  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 30 + 'px'
+}">  
    
 <input type=button value="Image Right" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 30 + 'px'
