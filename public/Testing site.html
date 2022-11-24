@@ -1,67 +1,47 @@
-<p> Version 0.0.1 </p> 
+<p> Version 0.0.2 </p> 
 
 
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Test Move Object</title>
-
-    <script type="text/javascript">
-       <script type="text/javascript">
-
-            function leftArrowPressed() {
-            var element = document.getElementById("image1");
-            element.style.left = parseInt(element.style.left) - 5 + 'px';
+    <head>
+        <style>
+            #img {
+                position: relative;
             }
-
-            function rightArrowPressed() {
-            var element = document.getElementById("image1");
-            element.style.left = parseInt(element.style.left) + 5 + 'px';
-
-            }
-
-            function upArrowPressed() {
-            var element = document.getElementById("image1");
-            element.style.top = parseInt(element.style.top) - 5 + 'px';
-            }
-
-            function downArrowPressed() {
-            var element = document.getElementById("image1");
-            element.style.top = parseInt(element.style.top) + 5 + 'px';
-            }
-
-            function moveSelection() {
-                evt = evt || window.event; 
-                switch (evt.keyCode) {
-                    case 37:
-                    leftArrowPressed();
-                    break;
-                    case 39:
-                    rightArrowPressed();
-                    break;
-                    case 38:
-                    upArrowPressed();
-                    break;
-                    case 40:
-                    downArrowPressed();
-                    break;
+        </style>
+        <title>This is filler text</title>
+    </head>
+    <body>
+        <p>This is filler text</p>
+        <img src="example.jpeg" length="100" width="100" id="img" />
+        <script>
+            document.onkeydown = function(event) {
+                    switch (event.keyCode) {
+                       case 37:
+                      moveLeft();
+                          break;
+                       case 38:
+                      moveUp();
+                          break;
+                       case 39:
+                      moveRight();
+                          break;
+                       case 40:
+                      moveDown();
+                          break;
                     }
                 };
+                function moveLeft() {
+                    document.getElementById("img").style.left += "5px";
+                }
+                function moveRight(){
+                    document.getElementById("img").style.right += "5px";
+                }
+                function moveDown(){
+                    document.getElementById("img").style.bottom += "5px";
 
-        function gameLoop()
-        {
-          // change position based on speed
-          moveSelection();
-          setTimeout("gameLoop()",10);
-        }
-
-  </script>
-  </head>
-
-  <body onload="gameLoop()" onkeydown="" onkeyup="" bgcolor='yellow'>
-   Test
-  <img id="image1" src="C:\Users\itpr13266\Desktop\mp.jpg" style="position:absolute;"
-                                                              height="15" width="15">
-  </body>
-   end html
+                function moveUp(){
+                    document.getElementById("img").style.top += "5px";
+                }
+        </script>
+    </body>
 </html>
