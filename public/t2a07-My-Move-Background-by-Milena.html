@@ -1,4 +1,4 @@
-<p> version 0.0.2 </p>
+<p> version 0.0.3 </p>
 
 
 
@@ -29,6 +29,29 @@
 
 
  <script>
+    function leftUpArrowPressed() {
+        var element = document.getElementById("image1");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+      }
+      
+       function leftDownArrowPressed() {
+        var element = document.getElementById("image1");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+      }
+      
+       function rightUpArrowPressed() {
+        var element = document.getElementById("image1");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+      }
+      
+       function rightDownArrowPressed() {
+        var element = document.getElementById("image1");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+      }
       function leftArrowPressed() {
         var element = document.getElementById("image1");
         element.style.left = parseInt(element.style.left) - 5 + 'px';
