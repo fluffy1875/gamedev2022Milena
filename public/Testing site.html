@@ -1,4 +1,4 @@
-<p> Version 0.0.5 </p> 
+<p> Version 0.0.6 </p> 
 
 
 <html>
@@ -10,6 +10,11 @@
       function leftArrowPressed() {
         var element = document.getElementById("image1");
         element.style.left = parseInt(element.style.left) - 5 + 'px';
+      }
+      
+      function leftUpArrowPressed() {
+        var element = document.getElementById("image1");
+        element.style.left = parseInt(element.style.left) - 5 + 'px' && element.style.left = parseInt(element.style.left) - 5 +'px';
       }
 
       function rightArrowPressed() {
