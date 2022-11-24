@@ -1,4 +1,4 @@
-<p> Version 0.0.4 </p>
+<p> Version 0.0.5 </p>
 
 <br>
 <br>
@@ -10,17 +10,14 @@
    let myClock
 </script>
 
-   <table border = 2>
-   <tr>
-<td> <input id="myButton01" type=button value="background move left" onclick="{
+   
+ <input id="myButton01" type=button value="background move left" onclick="{
   myTemp = '100px 0px'
   myGlobalX -= 5
   myTemp =  myGlobalX + 'px 0px'
   document.getElementById('myBody').style.backgroundPosition =myTemp
 }">
-      </td>
       
-      <td>
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
   myClock = setInterval(function(){
@@ -28,8 +25,9 @@
   }, 50)
 }">
          
-      </td>
       
+       <table border = 2>
+   <tr>
       <td>
 
 <input type=button value="Image Right and up" onclick="{
