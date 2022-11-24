@@ -1,4 +1,4 @@
-<p> Version 0.0.3 </p>
+<p> Version 0.0.4 </p>
 
 <br>
 <br>
@@ -10,57 +10,85 @@
    let myClock
 </script>
 
-<input id="myButton01" type=button value="background move left" onclick="{
+   <table border = 2>
+   <tr>
+<td> <input id="myButton01" type=button value="background move left" onclick="{
   myTemp = '100px 0px'
   myGlobalX -= 5
   myTemp =  myGlobalX + 'px 0px'
   document.getElementById('myBody').style.backgroundPosition =myTemp
 }">
-
+      </td>
+      
+      <td>
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
   myClock = setInterval(function(){
      document.getElementById('myButton01').click() 
   }, 50)
-    
 }">
+         
+      </td>
+      
+      <td>
 
 <input type=button value="Image Right and up" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 30 + 'px'
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 30 + 'px'
 }">   
-   
+      </td>
+      
+      <td>
 <input type=button value="Image Right and down" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 30 + 'px'
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 30 + 'px'
-}">   
-   
+}">
+      </td>
+      
+      <td>
 <input type=button value="Image left and up" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 30 + 'px'
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 30 + 'px'
 }">  
+      </td>
+      
+      <td>
    
 <input type=button value="Image left and down" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 30 + 'px'
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 30 + 'px'
 }">  
+      </td>
+      
+      <td>
    
 <input type=button value="Image Right" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 30 + 'px'
 }">
-   
+      </td>
+      
+      <td>
    
 <input type=button value="Image left" onclick="{
   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 30 + 'px'
 }">
+      </td>
+      
+      <td>
 
 <input type=button value="Image up" onclick="{
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 30 + 'px'
 }"> 
+         </td>
+      
+      <td>
    
 <input type=button value="Image down" onclick="{
   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 30 + 'px'
 }"> <br><br>
+      </td>
+      <tr>
+   </table><br>
 
 
    
