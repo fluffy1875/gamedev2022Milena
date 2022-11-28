@@ -1,4 +1,4 @@
-<p> Version 0.0.4 </p> 
+<p> Version 0.0.6 </p> 
 
 
 <html>
@@ -74,22 +74,73 @@
         window.addEventListener('keydown', moveSelection);
       }
     </script>
+    
+    
+    
+    
+    
+    <div id="box" style="border: 2px solid black; width: 200px; height: 200px">
+    <div id="sprite" style="left: 0; bottom: 0"></div>
+</div>
+<button>Increase Speed</button>
+
+<style>
+    #sprite {
+        width: 25px;
+        height: 25px;
+        background: red;
+        position: relative;
+        transition: 0.1s linear;
+    }
+</style>
+
+<script>
+    const box = document.querySelector('#box');
+    const sprite = document.querySelector('#sprite');
+    const button = document.querySelector('button');
+    let speed = 5;
+
+    const toNum = (pxVal) => {
+        return parseInt(pxVal, 10);
+    };
+
+    const handleMovement = (e) => {
+        let left = toNum(sprite.style.left);
+        const bottom = toNum(sprite.style.bottom);
+
+        switch (e.key) {
+            case 'a':
+                if (left <= 0) return (sprite.style.left = 0);
+                sprite.style.left = left - speed + 'px';
+                break;
+            case 'd':
+                if (left >= 175) return (sprite.style.left = 175);
+                sprite.style.left = left + speed + 'px';
+                break;
+            case 'w':
+                if (bottom >= 0) return (sprite.style.bottom = 0);
+                sprite.style.bottom = bottom + speed + 'px';
+                break;
+            case 's':
+                if (bottom <= -175) return (sprite.style.bottom = -175);
+                sprite.style.bottom = bottom - speed + 'px';
+                break;
+        }
+    };
+
+    window.addEventListener('keydown', handleMovement);
+
+    button.addEventListener('click', () => (speed += 5));
+</script>
   </head>
 
   <body onload="docReady()" onkeydown="" onkeyup="" bgcolor='yellow'>
     <img id="image1" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png" style="position:absolute;left:0; top:0;" height="120" width="100">
-    <img id="image2" src="https://howtodrawa.org/wp-content/uploads/2021/01/how-to-draw-a-box-5-300x216.jpg" style="position:absolute;left:0; top:0;" height="120" width="100">
-  </body>
- 
 
 
 
 <style>
   body {
     background-color: White;
-  }
-  image2 {
-    margin-right: 50%;
-    margin-bottom: 7em;
   }
 </style>
