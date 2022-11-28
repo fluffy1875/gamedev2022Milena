@@ -1,4 +1,4 @@
-version 0.0.2
+version 0.0.3
 
 This is the link for more intense code: encrypt jvavascript base64 https://www.w3docs.com/snippets/javascript/how-to-encode-and-decode-strings-with-base64-in-javascript.html
 
@@ -106,7 +106,7 @@ medium <input type=radio name="myMedium" value="2"><br>
 
 <input type=button value="encrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   myString = document.getElementById('myArea04').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'a') {myTemp  = 'z'} 
@@ -137,7 +137,7 @@ medium <input type=radio name="myMedium" value="2"><br>
       if (myString[myLoop] == 'z') {myTemp  = 'a'} 
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea03').value = myString.join('')
+   document.getElementById('myArea05').value = myString.join('')
 }"><br><br>
 
 
@@ -146,7 +146,7 @@ medium <input type=radio name="myMedium" value="2"><br>
 
 <input type=button value="decrypt" onclick="{
    let myTemp = ''
-    myString = document.getElementById('myArea03').value.toLowerCase().split('')
+    myString = document.getElementById('myArea05').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'a') {myTemp  = 'z'} 
@@ -177,8 +177,8 @@ medium <input type=radio name="myMedium" value="2"><br>
       if (myString[myLoop] == 'z') {myTemp  = 'a'} 
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea04').value = myString.join('')
+   document.getElementById('myArea06').value = myString.join('')
 }"><br><br>
 
 
-<textarea id="myArea04" rows=4 cols=70></textarea><br> 
+<textarea id="myArea06" rows=4 cols=70></textarea><br> 
