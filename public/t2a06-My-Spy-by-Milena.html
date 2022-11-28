@@ -1,4 +1,4 @@
-version 0.0.6
+version 0.0.7
 
 This is the link for more intense code: encrypt jvavascript base64 https://www.w3docs.com/snippets/javascript/how-to-encode-and-decode-strings-with-base64-in-javascript.html
 
@@ -89,3 +89,14 @@ This is the link for more intense code: encrypt jvavascript base64 https://www.w
 
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
+
+
+
+utf8Bytes = encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (match, p1) {
+    return String.fromCharCode('0x' + p1);
+  });
+
+  return btoa(utf8Bytes);
+}
+
+base64EncodeUnicode('Hello People')
