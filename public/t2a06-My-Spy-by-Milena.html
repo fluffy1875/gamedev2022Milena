@@ -1,4 +1,4 @@
-version 0.0.9
+version 0.0.2
 
 This is the link for more intense code: encrypt jvavascript base64 https://www.w3docs.com/snippets/javascript/how-to-encode-and-decode-strings-with-base64-in-javascript.html
 
@@ -101,52 +101,12 @@ This is the link for more intense code: encrypt jvavascript base64 https://www.w
 medium <input type=radio name="myMedium" value="2"><br>
 
 
-<textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
+<textarea id="myArea01" rows=4 cols=70>What are you doing, what are you doing? HEWOOOOOOO</textarea><br> 
 
 
 <input type=button value="encrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea01').value.toLowerCase().split('')
-   for (let myLoop=0;   myLoop < myString.length; myLoop++){
-      myTemp = myString[myLoop]
-      if (myString[myLoop] == 'a') {myTemp  = 'z'} 
-      if (myString[myLoop] == 'b') {myTemp  = 'y'}
-      if (myString[myLoop] == 'c') {myTemp  = 'x'} 
-      if (myString[myLoop] == 'd') {myTemp  = 'w'} 
-      if (myString[myLoop] == 'e') {myTemp  = 'v'} 
-      if (myString[myLoop] == 'f') {myTemp  = 'u'} 
-      if (myString[myLoop] == 'g') {myTemp  = 't'} 
-      if (myString[myLoop] == 'h') {myTemp  = 's'} 
-      if (myString[myLoop] == 'i') {myTemp  = 'r'} 
-      if (myString[myLoop] == 'j') {myTemp  = 'q'}
-      if (myString[myLoop] == 'k') {myTemp  = 'p'} 
-      if (myString[myLoop] == 'l') {myTemp  = 'o'} 
-      if (myString[myLoop] == 'm') {myTemp  = 'n'} 
-      if (myString[myLoop] == 'n') {myTemp  = 'm'}
-      if (myString[myLoop] == 'o') {myTemp  = 'l'} 
-      if (myString[myLoop] == 'p') {myTemp  = 'k'} 
-      if (myString[myLoop] == 'q') {myTemp  = 'j'} 
-      if (myString[myLoop] == 'r') {myTemp  = 'i'} 
-      if (myString[myLoop] == 's') {myTemp  = 'h'} 
-      if (myString[myLoop] == 't') {myTemp  = 'g'} 
-      if (myString[myLoop] == 'u') {myTemp  = 'f'} 
-      if (myString[myLoop] == 'v') {myTemp  = 'e'}
-      if (myString[myLoop] == 'w') {myTemp  = 'd'} 
-      if (myString[myLoop] == 'x') {myTemp  = 'c'} 
-      if (myString[myLoop] == 'y') {myTemp  = 'b'} 
-      if (myString[myLoop] == 'z') {myTemp  = 'a'} 
-      myString[myLoop] = myTemp
-   }
-   document.getElementById('myArea02').value = myString.join('')
-}"><br><br>
-
-
-
-<textarea id="myArea02" rows=4 cols=70></textarea><br> 
-
-<input type=button value="decrypt" onclick="{
-   let myTemp = ''
-    myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'a') {myTemp  = 'z'} 
@@ -181,4 +141,44 @@ medium <input type=radio name="myMedium" value="2"><br>
 }"><br><br>
 
 
+
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
+
+<input type=button value="decrypt" onclick="{
+   let myTemp = ''
+    myString = document.getElementById('myArea03').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'a') {myTemp  = 'z'} 
+      if (myString[myLoop] == 'b') {myTemp  = 'y'}
+      if (myString[myLoop] == 'c') {myTemp  = 'x'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'w'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'v'} 
+      if (myString[myLoop] == 'f') {myTemp  = 'u'} 
+      if (myString[myLoop] == 'g') {myTemp  = 't'} 
+      if (myString[myLoop] == 'h') {myTemp  = 's'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'j') {myTemp  = 'q'}
+      if (myString[myLoop] == 'k') {myTemp  = 'p'} 
+      if (myString[myLoop] == 'l') {myTemp  = 'o'} 
+      if (myString[myLoop] == 'm') {myTemp  = 'n'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'm'}
+      if (myString[myLoop] == 'o') {myTemp  = 'l'} 
+      if (myString[myLoop] == 'p') {myTemp  = 'k'} 
+      if (myString[myLoop] == 'q') {myTemp  = 'j'} 
+      if (myString[myLoop] == 'r') {myTemp  = 'i'} 
+      if (myString[myLoop] == 's') {myTemp  = 'h'} 
+      if (myString[myLoop] == 't') {myTemp  = 'g'} 
+      if (myString[myLoop] == 'u') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'e'}
+      if (myString[myLoop] == 'w') {myTemp  = 'd'} 
+      if (myString[myLoop] == 'x') {myTemp  = 'c'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'b'} 
+      if (myString[myLoop] == 'z') {myTemp  = 'a'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea04').value = myString.join('')
+}"><br><br>
+
+
+<textarea id="myArea04" rows=4 cols=70></textarea><br> 
