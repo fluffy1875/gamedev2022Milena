@@ -1,4 +1,4 @@
-version 0.0.7
+version 0.0.8
 
 This is the link for more intense code: encrypt jvavascript base64 https://www.w3docs.com/snippets/javascript/how-to-encode-and-decode-strings-with-base64-in-javascript.html
 
@@ -182,5 +182,103 @@ medium <input type=radio name="myMedium" value="2"><br>
 
 
 <textarea id="myArea06" rows=4 cols=70></textarea><br> 
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+Hard <input type=radio name="myHard" value="2"><br>
+
+
+<textarea id="myArea06" rows=4 cols=70>Hello how are you</textarea><br> 
+
+
+<input type=button value="encrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea06').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'a') {myTemp  = 'z'} 
+      if (myString[myLoop] == 'b') {myTemp  = 'y'}
+      if (myString[myLoop] == 'c') {myTemp  = 'x'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'w'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'v'} 
+      if (myString[myLoop] == 'f') {myTemp  = 'u'} 
+      if (myString[myLoop] == 'g') {myTemp  = 't'} 
+      if (myString[myLoop] == 'h') {myTemp  = 's'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'j') {myTemp  = 'q'}
+      if (myString[myLoop] == 'k') {myTemp  = 'p'} 
+      if (myString[myLoop] == 'l') {myTemp  = 'o'} 
+      if (myString[myLoop] == 'm') {myTemp  = 'n'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'm'}
+      if (myString[myLoop] == 'o') {myTemp  = 'l'} 
+      if (myString[myLoop] == 'p') {myTemp  = 'k'} 
+      if (myString[myLoop] == 'q') {myTemp  = 'j'} 
+      if (myString[myLoop] == 'r') {myTemp  = 'i'} 
+      if (myString[myLoop] == 's') {myTemp  = 'h'} 
+      if (myString[myLoop] == 't') {myTemp  = 'g'} 
+      if (myString[myLoop] == 'u') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'e'}
+      if (myString[myLoop] == 'w') {myTemp  = 'd'} 
+      if (myString[myLoop] == 'x') {myTemp  = 'c'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'b'} 
+      if (myString[myLoop] == 'z') {myTemp  = 'a'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea07').value = myString.join('')
+}"><br><br>
+
+
+
+<textarea id="myArea07" rows=4 cols=70></textarea><br> 
+
+<input type=button value="decrypt" onclick="{
+   let myTemp = ''
+    myString = document.getElementById('myArea07').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'a') {myTemp  = 'z'} 
+      if (myString[myLoop] == 'b') {myTemp  = 'y'}
+      if (myString[myLoop] == 'c') {myTemp  = 'x'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'w'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'v'} 
+      if (myString[myLoop] == 'f') {myTemp  = 'u'} 
+      if (myString[myLoop] == 'g') {myTemp  = 't'} 
+      if (myString[myLoop] == 'h') {myTemp  = 's'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'j') {myTemp  = 'q'}
+      if (myString[myLoop] == 'k') {myTemp  = 'p'} 
+      if (myString[myLoop] == 'l') {myTemp  = 'o'} 
+      if (myString[myLoop] == 'm') {myTemp  = 'n'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'm'}
+      if (myString[myLoop] == 'o') {myTemp  = 'l'} 
+      if (myString[myLoop] == 'p') {myTemp  = 'k'} 
+      if (myString[myLoop] == 'q') {myTemp  = 'j'} 
+      if (myString[myLoop] == 'r') {myTemp  = 'i'} 
+      if (myString[myLoop] == 's') {myTemp  = 'h'} 
+      if (myString[myLoop] == 't') {myTemp  = 'g'} 
+      if (myString[myLoop] == 'u') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'e'}
+      if (myString[myLoop] == 'w') {myTemp  = 'd'} 
+      if (myString[myLoop] == 'x') {myTemp  = 'c'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'b'} 
+      if (myString[myLoop] == 'z') {myTemp  = 'a'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea08').value = myString.join('')
+}"><br><br>
+
+
+<textarea id="myArea08" rows=4 cols=70></textarea><br> 
+
+
+
+
+
+
 
 
