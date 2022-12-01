@@ -1,4 +1,4 @@
-version 0.0.2
+version 0.0.3
 
 This is the link for more intense code: encrypt jvavascript base64 https://www.w3docs.com/snippets/javascript/how-to-encode-and-decode-strings-with-base64-in-javascript.html
 
@@ -8,7 +8,7 @@ This is the link for more intense code: encrypt jvavascript base64 https://www.w
 <br>
 
 
-Easy <input type="radio" name="contact" value="encrypt">  Middle <input type="radio" name="contact" value="middle">  Hard <input type="radio" name="contact" value="hard">
+Easy <input type="radio" name="contact" value="encrypt" id="easy">  Middle <input type="radio" name="contact" value="middle">  Hard <input type="radio" name="contact" value="hard">
 
 <br>
 <br>
@@ -17,7 +17,7 @@ Easy <input type="radio" name="contact" value="encrypt">  Middle <input type="ra
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
 
 
-<input type=button value="encrypt" onclick="{
+<input type=button value="encrypt" id="easy" onclick="{
    let myTemp = ''
    myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
