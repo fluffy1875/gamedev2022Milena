@@ -1,4 +1,4 @@
-Version 0.0.6
+Version 0.0.7
 
 <h2 align=center>t2a08-canvas by Fred</h2>
 You use loops and variables to make fast fancy drawings <br><br>
@@ -6,16 +6,16 @@ You use loops and variables to make fast fancy drawings <br><br>
 <input type=button value=".lineTo(50,800)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 1;   
-   myContext.moveTo(20,10);
+   myContext.moveTo(70,10);
    myContext.lineTo(50,300);
    myContext.stroke();
 }">
 
 <input type=button value=".arc(95, 50, 40, 0, 2 * Math.PI)" onclick="{
    myContext.beginPath();
-   myContext.lineWidth = 10;
-   myContext.strokeStyle = 'green';
-   myContext.arc(95, 50, 40, 0, 2 * Math.PI);
+   myContext.lineWidth = 15;
+   myContext.strokeStyle = 'Pink';
+   myContext.arc(95, 50, 40, 0, 3 * Math.PI);
    myContext.stroke();
 }">
 
@@ -33,7 +33,7 @@ You use loops and variables to make fast fancy drawings <br><br>
 <input type=button value=".quadraticCurveTo(100,220,240,110)" onclick="{
    myContext.beginPath();
    myContext.moveTo(800,600);
-   myContext.quadraticCurveTo(100,220,240,110);
+   myContext.quadraticCurveTo(200,220,240,90);
    myContext.stroke();
 }">
 
