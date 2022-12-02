@@ -1,11 +1,11 @@
-version 0.0.1
+version 0.0.2
 
 <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 <script>
     function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru,uk', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
 
     }
 </script>
@@ -18,6 +18,6 @@ version 0.0.1
 
 
 <input  type="button" value="initilize speak" onclick="{  
-   let myVoice = 'Russian Female'
+   let myVoice = 'Ukrainian Female'
    responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
 }"><br><br>
