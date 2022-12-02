@@ -1,4 +1,4 @@
-Version 0.0.9
+Version 0.0.2
 
 <h2 align=center>t2a08-canvas by Fred</h2>
 You use loops and variables to make fast fancy drawings <br><br>
@@ -44,8 +44,8 @@ You use loops and variables to make fast fancy drawings <br><br>
 <input type=button value=".createLinearGradient(100, 300, 200, 400)" onclick="{
    let myGradient = myContext.createLinearGradient(100, 300, 200, 400);
    myGradient.addColorStop(0, 'pink');
-   myGradient.addColorStop(1, 'cyan');
-   myGradient.addColorStop(2, 'blue');
+   myGradient.addColorStop(0.5, 'cyan');
+   myGradient.addColorStop(1, 'blue');
    myContext.fillStyle = myGradient;
    myContext.fillRect(100, 300, 200, 400);
    // reset fillstyle
