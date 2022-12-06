@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.2
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
 
@@ -23,4 +23,33 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
 
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
+}"> 
+
+   <br>
+   <br>
+   <hr>
+   <br>
+   <br>
+   
+   <body onload="{
+   myStorage = localStorage.getItem('thisStoredNumber')
+   if(thisStoredNumber  != null){
+      document.getElementById('thisText02').value = thisStoredNumber 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('thisStoredNumber',document.getElementById('thisText02').value)
+}">   
+
+Text example: <input id="thisText02" type=text size=70 value="" placeholder="Write here to store"><br>
+
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('thisStoredNumber', document.getElementById('thisText02').value)
+   alert(document.getElementById('thisText02').value + ' \nHas been stored')
+   document.getElementById('thisText02').value = ''
+}">
+
+<input type="button" value="Retrieve Text" onClick="{
+   document.getElementById('thisText02').value = localStorage.getItem('thisStoredNumber')
 }"> 
