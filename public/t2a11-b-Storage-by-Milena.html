@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
 
@@ -42,11 +42,11 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
    localstorage.setItem('thisStoredNumber',document.getElementById('thisText02').value)
 }">   
 
-Text example: <input id="thisText02" type=text size=70 value="" placeholder="Write here to store"><br>
+Text example: <input id="thisText02" type=text size=70 value="" placeholder="Write here a number to store"><br>
 
 <input type="button" value="Store Text" onClick="{
    localStorage.setItem('thisStoredNumber', document.getElementById('thisText02').value)
-   alert(document.getElementById('thisText02').value + ' \nHas been stored')
+   alert(document.getElementById('thisText02').value + ' \nThe number has been stored')
    document.getElementById('thisText02').value = ''
 }">
 
