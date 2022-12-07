@@ -1,4 +1,4 @@
-Version 0.0.7
+Version 0.0.8
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
 
@@ -53,5 +53,5 @@ Text example: <input id="thisText02" type=text size=70 value="" placeholder="Wri
    <id = "myText" value="Sike you have been tricked">
 
 <input type="button" value="Retrieve Text" onClick="{
-   document.getElementById('myText').value = thisText02
+   document.getElementById('myText').value = localStorage.getItem('myStoredText')
 }"> 
