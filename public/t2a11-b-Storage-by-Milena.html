@@ -1,4 +1,4 @@
-Version 0.0.7
+Version 0.0.8
 
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
@@ -32,23 +32,32 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
    <br>
    <br>
    
-   <body onload="{
-   str thisStoredNumber = "Sike you have been fooled"
-   myStorage = localStorage.getItem('thisStoredNumber')
+<body onload="{
+              
+              
+              
+              
+              
+              
+              
+   myStorage = localStorage.getItem('myStoredText')
+   if(myStorage  != null){
+      document.getElementById('myText1').value = myStorage 
+    }
 }">
 
 <body onunload="{
-   localstorage.setItem('thisStoredNumber',document.getElementById('thisText02').value)
+   localstorage.setItem('myStoredText',document.getElementById('myText1').value)
 }">   
 
-Text example: <input id="thisText02" type=text size=70 value="" placeholder="Write here a number to store"><br>
+Text example: <input id="myText1" type=text size=70 value="" placeholder="Write here to store"><br>
 
-<input type="button" value="Store Number" onClick="{
-   localStorage.setItem('thisStoredNumber', document.getElementById('thisText02').value)
-   alert(document.getElementById('thisText02').value + ' \nThe number has been stored')
-   document.getElementById('thisText02').value = ''
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoredText', document.getElementById('myText1').value)
+   alert(document.getElementById('myText1').value + ' \nHas been stored')
+   document.getElementById('myText1').value = ''
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-                                    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
+   document.getElementById('myText1').value = localStorage.getItem('myStoredText')
 }"> 
