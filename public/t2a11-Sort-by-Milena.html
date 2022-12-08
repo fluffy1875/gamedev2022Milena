@@ -1,4 +1,4 @@
-version 0.0.8
+version 0.0.9
 
 <h1 align=center>t2a12 Sort by Fred</h1>
 
@@ -37,6 +37,12 @@ else if(myCards[0] > myCards[1] && myCards[0] < myCards[2])
             myTemp = myCards[0]
         myCards[0] = myCards[1]
         myCards[1] = myTemp
+       }
+else if(myCards[0] < myCards[1] && myCards[0] < myCards[2])
+       {
+            myTemp = myCards[1]
+        myCards[1] = myCards[2]
+        myCards[2] = myTemp
        }
                          
         document.getElementById('myDiv01').innerHTML = myTemp                                  
