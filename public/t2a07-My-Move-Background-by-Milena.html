@@ -1,4 +1,4 @@
-<p> version 0.0.2 </p>
+<p> version 0.0.3 </p>
 
 
 
@@ -93,6 +93,31 @@
       function docReady() {
         window.addEventListener('keydown', moveSelection);
       } 
+    
+    
+    document.all.myText01.value = event.key
+    
+   if (event.key == 'd') {  
+     document.getElementById('image1').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+   }   
+
+   if (event.key == 's') {   
+      document.getElementById('image1').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   }  
+   
+   if (event.key == 'w') {   
+      document.getElementById('image1').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 + 'px'
+   }  
+   
+   if (event.key == 'a') {   
+      document.getElementById('image1').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
+   }   
+    
+    
+    
+    
+    
+    
     </script>
   </head>
 
