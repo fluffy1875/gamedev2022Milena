@@ -1,4 +1,4 @@
-<p> version 0.0.9 </p>
+<p> version 0.0.2 </p>
 
 
 
@@ -92,11 +92,12 @@
 
       function docReady() {
         window.addEventListener('keydown', moveSelection);
-      }
-    
-    
-    
-    document.all.myText01.value = event.key
+      } 
+    </script>
+  </head>
+
+
+document.all.myText01.value = event.key
     
    if (event.key == 'd') {  
      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
@@ -113,10 +114,10 @@
    if (event.key == 'a') {   
       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
    }   
-    
-    
-    </script>
-  </head>
+
+
+
+
 
   <body onload="docReady()" onkeydown="" onkeyup="" bgcolor='white'>
     <img id="image1" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png" style="position:absolute;left:0; top:0;" height="120" width="100">
