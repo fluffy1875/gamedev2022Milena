@@ -1,4 +1,4 @@
-<p> version 0.0.5 </p>
+<p> version 0.0.7 </p>
 
 
 
@@ -73,26 +73,48 @@
         element.style.top = parseInt(element.style.top) + 5 + 'px';
       }
 
-      function moveSelection(evt) {
-        switch (evt.keyCode) {
-          case 37:
-            leftArrowPressed();
-            break;
-          case 39:
-            rightArrowPressed();
-            break;
-          case 38:
-            upArrowPressed();
-            break;
-          case 40:
-            downArrowPressed();
-            break;
-        }
+      //function moveSelection(evt) {
+        //switch (evt.keyCode) {
+         // case 37:
+           // leftArrowPressed();
+           // break;
+         // case 39:
+           // rightArrowPressed();
+          //  break;
+          //case 38:
+           // upArrowPressed();
+         //   break;
+         // case 40:
+           // downArrowPressed();
+           // break;
+      //  }
       };
 
       function docReady() {
         window.addEventListener('keydown', moveSelection);
       }
+    
+    
+    
+    
+    
+   if (event.key == 'd') {  // d = go right
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+   }   
+
+   if (event.key == 's') {   // s = go down
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+   }  
+   
+   if (event.key == 'w') {   
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 + 'px'
+   }  
+   
+   if (event.key == 'a') {   
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
+   }   
+    
+    
     </script>
   </head>
 
