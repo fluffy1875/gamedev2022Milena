@@ -1,4 +1,4 @@
-<p> version 0.0.7 </p>
+<p> version 0.0.8 </p>
 
 
 
@@ -73,21 +73,21 @@
         element.style.top = parseInt(element.style.top) + 5 + 'px';
       }
 
-      //function moveSelection(evt) {
-        //switch (evt.keyCode) {
-         // case 37:
-           // leftArrowPressed();
-           // break;
-         // case 39:
-           // rightArrowPressed();
-          //  break;
-          //case 38:
-           // upArrowPressed();
-         //   break;
-         // case 40:
-           // downArrowPressed();
-           // break;
-      //  }
+      function moveSelection(evt) {
+        switch (evt.keyCode) {
+          case 37:
+            leftArrowPressed();
+            break;
+          case 39:
+            rightArrowPressed();
+            break;
+          case 38:
+            upArrowPressed();
+            break;
+          case 40:
+            downArrowPressed();
+            break;
+        }
       };
 
       function docReady() {
