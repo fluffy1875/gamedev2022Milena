@@ -15,7 +15,7 @@ Version 0.0.2
     var mySalary = document.getElementById('salaryId').value
     var myHour = document.getElementById('hourId').value
     var myTax = document.getElementById('taxId').value
-    let myTotal = parseFloat(mySalary) * parseFloat(myHour) * parseFloat(myTax)                      
+    let myTotal01 = parseFloat(mySalary) * parseFloat(myHour) * parseFloat(myTax)                      
                                                                       
     document.getElementById('myDiv02').innerHTML = 'Numbers added together ' + mySalary + ' * ' + myHour + ' * ' + myTax + ' = ' + myTotal + '<br>'
 }">
@@ -24,4 +24,25 @@ Version 0.0.2
 
 <br>
 <br>
+
+<input id="myButton" type = "button" value="subtract the numbers" onclick="{
+    let mySalary = document.getElementById('salaryId').value
+    let myHour = document.getElementById('hourId').value
+    let myTax = document.getElementById('taxId').value
+    let myTotal01 = parseFloat(mySalary) * parseFloat(myHour) * parseFloat(myTax) 
+    let myTotal02 = parseFloat(mySalary) * parseFloat(myHour) - parseFloat(myTotal01)
+                                                                      
+    document.getElementById('myDiv02').innerHTML = 'Numbers added together ' + mySalary + ' * ' + myHour + ' * ' + myTax + ' = ' + myTotal + '<br>'
+}">
+
+<div id='myDiv02'>...</div>
+
+
+
+
+
+
+
+
+
 
