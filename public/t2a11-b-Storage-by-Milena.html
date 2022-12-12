@@ -1,4 +1,4 @@
-Version 0.0.7
+Version 0.0.8
 
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
@@ -45,7 +45,7 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
 }">   
 
 Text example: <input id="myText2" type=text size=70 value="" placeholder="Write here to store"><br>
-              <id="myText3" type=text size=0><br>
+              <input id="myText3" type=button size=0><br>
 
 <input type="button" value="Store Text" onClick="{
    localStorage.setItem('myStored', document.getElementById('myText2').value)
@@ -54,7 +54,6 @@ Text example: <input id="myText2" type=text size=70 value="" placeholder="Write 
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-   //document.getElementById('myText2').value = localStorage.getItem('myStored')
    alert(document.getElementById('myText2').value + ' \I told you it was not stored')
    alert(document.getElementById('myText3').value + ' \Are you paniking?')
 }">   
