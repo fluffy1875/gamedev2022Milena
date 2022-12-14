@@ -1,6 +1,6 @@
 <h2> We are finding out about the texes LOOOOOOOOOOOOOOL </h2>
 
-Version 0.0.5
+Version 0.0.6
 
 
 <br>
@@ -16,6 +16,7 @@ Version 0.0.5
     var myHour = document.getElementById('hourId').value
     var myTax = document.getElementById('taxId').value                                                                  
     let myTotal = parseFloat(mySalary) * parseFloat(myHour) * parseFloat(myTax)                      
+    let myOffTotal = parseFloat(mySalary) * parseFloat(myHour) - parseFloat(myTax)
                                                                       
     document.getElementById('myDiv02').innerHTML = 'Numbers multiplied together ' + mySalary + ' * ' + myHour + ' * ' + myTax + ' = ' + myTotal + '<br>'
 }">
@@ -25,7 +26,9 @@ Version 0.0.5
 <br>
 <br>
 
+document.getElementById('myDiv03').innerHTML = 'Numbers multiplied together ' + mySalary + ' * ' + myHour + ' - ' + myTotal + ' = ' + myOffTotal + ' <br>'
 
+<div id='myDiv03'>...</div>
 
 
 
