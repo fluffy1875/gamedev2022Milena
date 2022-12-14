@@ -1,4 +1,4 @@
-Version 0.0.5
+Version 0.0.6
 
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
@@ -54,8 +54,8 @@ Text example: <input id="myText2" type=text size=70 value="" placeholder="Write 
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-   alert(document.getElementById('myText2').value + ' \I told you it was not stored')
-   alert(document.getElementById('myText3').value + ' \Are you paniking?')
+   document.getElementById('myText2').value 
+   document.getElementById('myText3').value = document.getElementById('myDiv04').innerHTML 
 }">   
 
    <style>
