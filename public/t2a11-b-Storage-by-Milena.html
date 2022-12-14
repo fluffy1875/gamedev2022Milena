@@ -1,4 +1,4 @@
-Version 0.0.7
+Version 0.0.8
 
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
@@ -33,51 +33,25 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
    <br>
 
 
- <body onload="{
-   myMaStorage = localStorage.getItem('myStored')
-   if(myStorage  != null){
-      document.getElementById('myText2').value = myMaStorage 
+<body onload="{
+   myEpicStorage = localStorage.getItem('myStoreText')
+   if(myEpicStorage  != null){
+      document.getElementById('myText2').value = myEpicStorage 
     }
 }">
 
 <body onunload="{
-   localstorage.setItem('myStored',document.getElementById('myText2').value)
+   localstorage.setItem('myStoreText',document.getElementById('myText2').value)
 }">   
 
-Text example: <input id="myText2" type=text size=70 value="" placeholder="Write here to store"><br>
-              <input id="myText3" type= button2 size=0><br>
+Text example: <input id="myText1" type=text size=70 value="" placeholder="Write here to store"><br>
 
 <input type="button" value="Store Text" onClick="{
-   localStorage.setItem('myStored', document.getElementById('myText2').value)
+   localStorage.setItem('myStoreText', document.getElementById('myText2').value)
+   document.getElementById('myText2').value + ' Has been stored'
    document.getElementById('myText2').value = ''
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-   document.getElementById('myText2').value 
-   document.getElementById('myText3').value = document.getElementById('myDiv04').innerHTML 
-}">   
-   
-   <div id='myDiv04'>...</div>
-
-   <style>
-      
-   button2 {
-    background:blue;
-    border:none;
-    outline:none;
-    display:block;
-    height:200px;
-    width:200px;
-    cursor:pointer;
-}
-      myText3 {
-         background:transparent;
-         border:none;
-         outline:none;
-         display:block;
-         height:200px;
-         width:200px;
-         cursor:pointer;
-      }
-
-   </style>
+   document.getElementById('myText2').value = localStorage.getItem('myStoreText')
+}"> 
