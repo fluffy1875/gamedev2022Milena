@@ -26,7 +26,19 @@ Version 0.0.7
 <br>
 <br>
 
+<input type="text" id="salaryId" value = "15" > X <input type="text" id="hourId" value="8"> X <input type="text" id="taxId" value="0.3"> 
 
+<input id="myButton" type = "button" value="Add the numbers" onclick="{
+    var mySalary = document.getElementById('salaryId').value
+    var myHour = document.getElementById('hourId').value
+    var myTax = document.getElementById('taxId').value                                                                  
+    let myTotal = parseFloat(mySalary) * parseFloat(myHour) * parseFloat(myTax)                      
+    let myOffTotal = parseFloat(mySalary) * parseFloat(myHour) - parseFloat(myTax)
+                                                                      
+    document.getElementById('myDiv02').innerHTML = 'Numbers multiplied together ' + mySalary + ' * ' + myHour + ' * ' + myTax + ' - ' + myTax + ' = ' + myTotal + '<br>'
+}">
+
+<div id='myDiv02'>...</div>                                                                                                                                
 
 
 
