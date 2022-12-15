@@ -84,7 +84,7 @@ Text example: <input id="myText2" type=text size=70 value=" " placeholder="Write
    localstorage.setItem('myStoreText',document.getElementById('myText3').value)
 }">   
 
-Text example: <input id="myText3" type=text size=70 value=" I love cats" placeholder="Write here and click store"><br>
+Text example: <input id="myText3" type=text size=70 value=" " placeholder="Write here and click store"><br>
 
 <input type="button" value="Store Text" onClick="{
    localStorage.setItem('myStoreText', document.getElementById('myText3').value)
@@ -93,4 +93,38 @@ Text example: <input id="myText3" type=text size=70 value=" I love cats" placeho
 
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText3').value = localStorage.getItem('myStoreText')
+}"> 
+
+   
+   
+   
+   <br>
+   <br>
+   <br>
+   <hr>
+   <br>
+   <br>
+   <br>
+   
+   
+   <body onload="{
+   myEpicStorage == localStorage.getItem('I love cats')
+   if(myEpicStorage  == I love cats){
+      document.getElementById('myText3').value = myEpicStorage 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoreText',document.getElementById('myText3').value)
+}">   
+
+Text example: <input id="myText3" type=text size=70 value=" " placeholder="Write here and click store"><br>
+
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoreText', document.getElementById('myText3').value)
+   document.getElementById('myText3').value = 'I love cats'
+}">
+
+<input type="button" value="Retrieve Text" onClick="{
+   document.getElementById('myText3').value = localStorage.getItem('I love cats')
 }"> 
