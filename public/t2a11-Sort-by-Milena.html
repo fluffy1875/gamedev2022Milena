@@ -60,7 +60,7 @@ else if(myCards[0] < myCards[1] && myCards[0] > myCards[2])
 <input type=button value=" manual Sort" onclick="{
   let myTemp = 0
   for ( let i = 0;  i < myMax;  i++){
-  for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
+  for ( let myLoop = 0;   myLoop < myMax-1;  myLoop++){
                                          
      if(myCards[myLoop] > myCards[myLoop+1] ){
         myTemp = myCards[myLoop]
