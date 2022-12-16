@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.3
 
 
 <script>
@@ -83,7 +83,14 @@ function myCheckHit(){
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
    }  
 
-   // put more here
+   if (event.key == 'a') {   // s = go down
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
+   }  
+   
+   if (event.key == 'w') {   // s = go down
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 + 'px'
+   }  
+   
 
 
 
@@ -124,6 +131,6 @@ function myCheckHit(){
 
 
 <img id="myImg01" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
-<img id="myImg02" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left:350px; top:190px;">
-<img id="myImg03" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left:500px; top:190px;">
+<img id="myImg02" src="https://opengameart.org/sites/default/files/crate_0.png"  style="position:absolute; width:100px; height:80px; left:350px; top:190px;">
+<img id="myImg03" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  style="position:absolute; width:100px; height:80px; left:500px; top:190px;">
 <img id="myImg04" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left:500px; top:400px;">
