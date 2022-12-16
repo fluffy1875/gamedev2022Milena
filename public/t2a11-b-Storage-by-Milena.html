@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 
 <h2>t2a09-local-storage-name by Fred. Instructions:</h2>
@@ -74,25 +74,25 @@ Text example: <input id="myText2" type=text size=70 value=" " placeholder="Write
    <p> He loves cats only </p>
    
 <body onload="{
-   myEpicStorage = localStorage.getItem('myStoreText')
-   if(myEpicStorage  == I love cats){
-      document.getElementById('myText3').value = myEpicStorage 
+   myCatStorage = localStorage.getItem('myStoreCat')
+   if(myCatStorage  == I love cats){
+      document.getElementById('myText3').value = myCatStorage 
     }
 }">
 
 <body onunload="{
-   localstorage.setItem('myStoreText',document.getElementById('myText3').value)
+   localstorage.setItem('myStoreCat',document.getElementById('myText3').value)
 }">   
 
 Text example: <input id="myText3" type=text size=70 value=" " placeholder="Write here and click store"><br>
 
 <input type="button" value="Store Text" onClick="{
-   localStorage.setItem('myStoreText', document.getElementById('myText3').value)
+   localStorage.setItem('myStoreCat', document.getElementById('myText3').value)
    document.getElementById('myText3').value = 'I love cats'
 }">
 
 <input type="button" value="Retrieve Text" onClick="{
-   document.getElementById('myText3').value = localStorage.getItem('myStoreText')
+   document.getElementById('myText3').value = localStorage.getItem('myStoreCat')
 }"> 
 
    
@@ -108,7 +108,7 @@ Text example: <input id="myText3" type=text size=70 value=" " placeholder="Write
    
    
    <body onload="{
-   myEpicStorage == localStorage.getItem('I love cats')
+   myCatStorage == localStorage.getItem('I love cats')
    if(myEpicStorage  == I love cats){
       document.getElementById('myText3').value = myEpicStorage 
     }
