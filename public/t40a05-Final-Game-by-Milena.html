@@ -1,4 +1,4 @@
-Version 0.0.9
+Version 0.0.2
 
 
 <script>
@@ -33,16 +33,21 @@ function myCheckHit(){
    document.all.myText01.value = myScore  // show the present score
 
    if ( myHitOther('myImg01','myImg02') ){
-      document.getElementById('myImg01').style.left = '20px'
+      document.getElementById('myImg01').style.left = '30px'
       document.all.myText01.value = 'You hit myImg02'  
       myScore -= 1
    }   
    
-   if ( myHitOther('myImg01','myImg03','myImg05') ){
+   if ( myHitOther('myImg01','myImg03') ){
        //alert('you lose')
-      document.getElementById('myImg01').style.left = '20px'
-      document.all.myText01.value = 'You hit myImg03'  
-      document.all.myText03.value = 'You hit myImg05'
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myImg03'
+      myScore -= 1
+   }   
+   if ( myHitOther('myImg01','myImg05') ){
+       //alert('you lose')
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myImg05'
       myScore -= 1
    }   
    
