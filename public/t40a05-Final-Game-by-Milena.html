@@ -115,7 +115,7 @@ function myCheckHit(){
   clearInterval(myClock)
   let myTemp = '100px 0px'
   myClock = setInterval(function(){
-      myGlobalX -= 5
+      myGlobalX -= document.getElementById('myText01').value
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
   }, 100)
