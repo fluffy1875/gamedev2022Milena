@@ -1,5 +1,5 @@
-version 0.0.1
-LEVEL 2
+Version 0.0.6
+Level 2
 
 <script>
 
@@ -8,6 +8,7 @@ LEVEL 2
    let myGlobalX = 0
    let myClock
    let myScore = 10
+
 
    // global functions here
 function myHitOther(my1,my2){
@@ -32,15 +33,21 @@ function myCheckHit(){
    document.all.myText01.value = myScore  // show the present score
 
    if ( myHitOther('myImg01','myImg02') ){
-      document.getElementById('myImg01').style.left = '10px'
+      document.getElementById('myImg01').style.left = '30px'
       document.all.myText01.value = 'You hit myImg02'  
       myScore -= 1
    }   
    
    if ( myHitOther('myImg01','myImg03') ){
        //alert('you lose')
-      document.getElementById('myImg01').style.left = '20px'
-      document.all.myText01.value = 'You hit myImg03'  
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myImg03'
+      myScore -= 1
+   }   
+   if ( myHitOther('myImg01','myImg05') ){
+       //alert('you lose')
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myImg05'
       myScore -= 1
    }   
    
@@ -70,30 +77,22 @@ function myCheckHit(){
 
 
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://images.alphacoders.com/109/thumb-1920-1099553.jpg"  onkeydown="{
-
+<body id="myBody" style="background-repeat:repeat; background-size: 100%" background="https://images.alphacoders.com/109/thumb-1920-1099553.jpg"  onkeydown="{
    document.all.myText01.value = event.key
-
    if (event.key == 'd') {  // d = go right
      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
    }   
-
    if (event.key == 's') {   // s = go down
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
    }  
+   if (event.key == 'a') {   // s = go down
+      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
+   }  
    
-   if (event.key == 'w') {   
+   if (event.key == 'w') {   // s = go down
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 + 'px'
    }  
    
-   if (event.key == 'a') {   
-      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
-   }  
-
-   // put more here
-
-
-
   myCheckHit()     // checks for all collisions
 }">
 
@@ -112,25 +111,24 @@ function myCheckHit(){
       myGlobalX -= 5
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
+      document.getElementById('myImg02').style.left -= myGlobalX + 'px'
+      document.getElementById('myImg03').style.left -= myGlobalX + 'px'
+      document.getElementById('myImg04').style.left += myGlobalX + 'px'
+      document.getElementById('myImg05').style.left += myGlobalX + 'px'
   }, 100)
     
 }">
 
 
-<input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}">
 
-<input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}"><br><br>
-
-
-
-
-<img id="myImg01" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
-<img id="myImg02" src="https://opengameart.org/sites/default/files/crate_0.png"  style="position:absolute; width:100px; height:80px; left:70px; top:100px;">
-<img id="myImg03" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  style="position:absolute; width:100px; height:80px; left:600px; top:100px;">
-<img id="myImg04" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left:500px; top:400px;">
+<img id="myImg01" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;"> //
+<img id="myImg02" src="https://opengameart.org/sites/default/files/crate_0.png"  style="position:absolute; width:100px; height:80px; left:550px; top:-50px;">
+<img id="myImg03" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  style="position:absolute; width:100px; height:80px; left:450px; top:130px;">
+<img id="myImg04" src="https://freepngimg.com/download/portal/27619-7-portal-image.png"  style="position:absolute; width:100px; height:80px; left:600px; top:500px;"> //
+<img id="myImg05" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  style="position:absolute; width:120px; height:100px; left:400px; top:50px;">           
+   
+   
+  
+      
+      
+ 
