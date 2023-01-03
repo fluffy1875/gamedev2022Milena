@@ -1,4 +1,4 @@
-<p> Version 0.0.5 </p>
+<p> Version 0.0.6 </p>
 Level 2
 
 <script>
@@ -49,6 +49,13 @@ function myCheckHit(){
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText01.value = 'You hit myImg05'
       myScore -= 1
+   }   
+   
+   if ( myHitOther('myImg01','myBottomBorderImg01') ){
+       //alert('you lose')
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myBottomBorderImg01'
+      myScore -= 10
    }   
    
   // you LOSE refresh the page
