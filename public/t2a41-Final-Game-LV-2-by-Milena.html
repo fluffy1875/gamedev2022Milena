@@ -1,4 +1,4 @@
-<p> Version 0.0.9 </p>
+<p> Version 0.0.2 </p>
 Level 2
 
 <script>
@@ -59,6 +59,12 @@ function myCheckHit(){
    }   
    
    if ( myHitOther('myImg01','myLeftBorderImg02') ){
+       //alert('you lose')
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myBottomBorderImg01'
+      myScore -= 10
+   }   
+    if ( myHitOther('myImg01','myTopBorderImg03') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText01.value = 'You hit myBottomBorderImg01'
@@ -155,6 +161,8 @@ function myCheckHit(){
                                                                                style="position:absolute; width:1700px; height:40px; left:0px; top:950px;">
 <img id="myLeftBorderImg02" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
                                                                                style="position:absolute; width:40px; height:950pxpx; left:-30px; top:7px;">
+<img id="myTopBorderImg03" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:1705px; height:40px; left:0px; top:-60px;">
    
    
   
