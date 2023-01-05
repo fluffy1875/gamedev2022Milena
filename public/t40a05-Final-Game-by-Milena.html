@@ -1,4 +1,4 @@
-<p> Version 0.0.6 </p>
+<p> Version 0.0.7 </p>
 
 
 <script>
@@ -66,6 +66,13 @@ function myCheckHit(){
    }  
    
    if ( myHitOther('myImg01','myTopBorderImg03') ){
+       //alert('you lose')
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'myBorderImg01'
+      myScore -= 10
+   }   
+   
+   if ( myHitOther('myImg01','myrightBorderImg04') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText01.value = 'myBorderImg01'
