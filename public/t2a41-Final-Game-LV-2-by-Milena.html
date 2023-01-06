@@ -1,4 +1,4 @@
-<p> Version 0.0.7 </p>
+<p> Version 0.0.8 </p>
 Level 2
 
 <script>
@@ -58,13 +58,6 @@ function myCheckHit(){
       myScore -= 10
    }   
    
-  if ( myHitOther('myImg01','myLeftBorderImg02') ){
-       //alert('you lose')
-      document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myBottomBorderImg01'
-      myScore -= 10
-   }   
-   
     if ( myHitOther('myImg01','myTopBorderImg03') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
@@ -73,6 +66,13 @@ function myCheckHit(){
    }   
    
    if ( myHitOther('myImg01','myrightBorderImg04') ){
+       //alert('you lose')
+      document.getElementById('myImg01').style.left = '30px'
+      document.all.myText01.value = 'You hit myBottomBorderImg01'
+      myScore -= 10
+   }   
+   
+    if ( myHitOther('myImg01','myLeftBorderImg02') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText01.value = 'You hit myBottomBorderImg01'
