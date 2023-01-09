@@ -1,4 +1,4 @@
-<h6> Version 0.0.6 </h6>
+<h2> Version 0.0.7 </h2>
 
 
 <script>
@@ -58,20 +58,20 @@ function myCheckHit(){
       myScore -= 1
    }
    
-   if ( myHitOther('myImg01','myImg05') ){
+   if ( myHitOther('myImg01','myImg07') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText02.value = 'You hit myImg05'
       myScore -= 1
    }
    
-   if ( myHitOther('myImg01','myImg05') ){
+   if ( myHitOther('myImg01','myImg08') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText02.value = 'You hit myImg05'
       myScore -= 1
    }
-   if ( myHitOther('myImg01','myImg08') ){
+   if ( myHitOther('myImg01','myImg09') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
       document.all.myText02.value = 'You hit myImg08'
@@ -81,7 +81,20 @@ function myCheckHit(){
        //alert('you lose')
       //document.getElementById('myImg01').style.left = '30px'
       document.all.myText02.value = 'You got 10 lives .You hit myImg08'
-      myScore += 6 //delete myImg10 
+      myScore += 6
+      style="position:absolute; width:80px; height:60px; left:-800px; top:230px;"
+   }
+   if ( myHitOther('myImg01','myImg11') ){
+       //alert('you lose')
+      //document.getElementById('myImg01').style.left = '30px'
+      document.all.myText02.value = 'You got 10 lives .You hit myImg08'
+      myScore -= 1  
+   }
+   if ( myHitOther('myImg01','myImg12') ){
+       //alert('you lose')
+      //document.getElementById('myImg01').style.left = '30px'
+      document.all.myText02.value = 'You got 10 lives .You hit myImg08'
+      myScore -= 1  
    }
    
     if ( myHitOther('myImg01','myBorderImg01') ){
