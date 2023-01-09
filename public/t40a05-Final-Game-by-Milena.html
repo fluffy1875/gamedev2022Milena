@@ -34,81 +34,81 @@ function myCheckHit(){
 
    if ( myHitOther('myImg01','myImg02') ){
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg02'  
+      document.all.myText02.value = 'You hit myImg02'  
       myScore -= 1
    }   
    
    if ( myHitOther('myImg01','myImg03') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg03'
+      document.all.myText02.value = 'You hit myImg03'
       myScore -= 1
    }   
    if ( myHitOther('myImg01','myImg05') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg05'
+      document.all.myText02.value = 'You hit myImg05'
       myScore -= 1
    }
    
    if ( myHitOther('myImg01','myImg06') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg05'
+      document.all.myText02.value = 'You hit myImg05'
       myScore -= 1
    }
    
    if ( myHitOther('myImg01','myImg05') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg05'
+      document.all.myText02.value = 'You hit myImg05'
       myScore -= 1
    }
    
    if ( myHitOther('myImg01','myImg05') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg05'
+      document.all.myText02.value = 'You hit myImg05'
       myScore -= 1
    }
    if ( myHitOther('myImg01','myImg08') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You hit myImg08'
+      document.all.myText02.value = 'You hit myImg08'
       myScore -= 1
    }
    if ( myHitOther('myImg01','myImg10') ){
        //alert('you lose')
       //document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'You got 10 lives .You hit myImg08'
-      myScore += 6 delete myImg10 
+      document.all.myText02.value = 'You got 10 lives .You hit myImg08'
+      myScore += 6 //delete myImg10 
    }
    
     if ( myHitOther('myImg01','myBorderImg01') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'myBorderImg01'
+      document.all.myText02.value = 'myBorderImg01'
       myScore -= 1
    }   
    
    if ( myHitOther('myImg01','myLeftBorderImg02') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'myBorderImg01'
+      document.all.myText02.value = 'myBorderImg01'
       myScore -= 10
    }  
    
    if ( myHitOther('myImg01','myTopBorderImg03') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'myBorderImg01'
+      document.all.myText02.value = 'myBorderImg01'
       myScore -= 10
    }   
    
    if ( myHitOther('myImg01','myrightBorderImg04') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '30px'
-      document.all.myText01.value = 'myBorderImg01'
+      document.all.myText02.value = 'myBorderImg01'
       myScore -= 10
    }   
    
@@ -171,6 +171,7 @@ function myCheckHit(){
 <h1 align=center><font color=Yellow>T4A05 Template with WASD by Fred</font></h1>
 
 <input id="myText01" type=text value="" size=50 placeholder="Feedback here"><br>
+<input id="myText02" type=text value="" size=50 placeholder="Feedback here"><br>
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
