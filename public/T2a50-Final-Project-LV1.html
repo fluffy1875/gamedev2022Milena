@@ -1,4 +1,4 @@
-<p> Version 0.0.6 </p>
+<p> Version 0.0.7 </p>
 
 <script>
 
@@ -90,6 +90,30 @@ function myCheckHit(){
       document.getElementById('myMain').style.left = '20px'
       document.all.myText01.value = 'You hit myImg12'  
       myScore -= 1
+   } 
+   if ( myHitOther('myMain','myBottomBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myBottomBorder'  
+      myScore -= 10
+   }   
+   if ( myHitOther('myMain','myLeftBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myLeftBorder'  
+      myScore -= 10
+   }   
+   if ( myHitOther('myMain','myTopBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit TopBorder'  
+      myScore -= 10
+   }   
+   if ( myHitOther('myMain','myRightBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit RightBorder'  
+      myScore -= 10
    }   
    
   // you LOSE refresh the page
@@ -198,7 +222,14 @@ function myCheckHit(){
 <img id="myImg12" src="https://3.bp.blogspot.com/-Ri7C8vgnQT0/TnuaY8GU_7I/AAAAAAAAATw/NQ7JuhxPEck/s1600/box+3.jpg"  
                                                                                  style="position:absolute; width:130px; height:110px; left:200px; top:250px;">
    
-   
+<img id="myBottomBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:1705px; height:40px; left:0px; top:950px;">
+<img id="myLeftBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:40px; height:950px; left:-45px; top:5px;">
+<img id="myTopBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:1705px; height:40px; left:0px; top:-60px;">
+<img id="myRightBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:5px; height:950px; left:1700px; top:0px;">   
    
    
    
