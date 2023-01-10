@@ -1,3 +1,5 @@
+<p> Version 0.0.1 </p>
+
 <script>
 
    // global variables here
@@ -29,15 +31,15 @@ function myHitOther(my1,my2){
 function myCheckHit(){
    document.all.myText01.value = myScore  // show the present score
 
-   if ( myHitOther('myImg01','myImg02') ){
-      document.getElementById('myImg01').style.left = '20px'
+   if ( myHitOther('myMain','myImg02') ){
+      document.getElementById('myMain').style.left = '20px'
       document.all.myText01.value = 'You hit myImg02'  
       myScore -= 1
    }   
    
-   if ( myHitOther('myImg01','myImg03') ){
+   if ( myHitOther('myMain','myImg03') ){
        //alert('you lose')
-      document.getElementById('myImg01').style.left = '20px'
+      document.getElementById('myMain').style.left = '20px'
       document.all.myText01.value = 'You hit myImg03'  
       myScore -= 1
    }   
@@ -51,10 +53,10 @@ function myCheckHit(){
 
    // YOU WIN and go to next level!
 
-   if ( myHitOther('myImg01','myImg04') ){
+   if ( myHitOther('myMain','myPortal') ){
       document.all.myText01.value = 'You hit myImg04 and you win the game!'  
        alert('You Win, now go to the next level')
-      document.getElementById('myImg01').style.left = '20px'
+      document.getElementById('myMain').style.left = '20px'
       location = 'https://www.google.ca'
    }
 
@@ -120,7 +122,58 @@ function myCheckHit(){
 
 
 
-<img id="myImg01" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
-<img id="myImg02" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:350px; top:190px;">
-<img id="myImg03" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:500px; top:190px;">
-<img id="myImg04" src="myImgNew.jpg"  style="position:absolute; width:100px; height:80px; left:500px; top:400px;">
+<img id="myMain" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  
+                                                                                 style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
+<img id="myImg02" src="https://www.freeiconspng.com/images/number-1-png"  
+                                                                                 style="position:absolute; width:150px; height:130px; left:1200px; top:80px;">
+<img id="myImg03" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  
+                                                                                 style="position:absolute; width:170px; height:150px; left:750px; top:300px;">
+<img id="myPortal" src="https://freepngimg.com/download/portal/27619-7-portal-image.png"  
+                                                                                 style="position:absolute; width:100px; height:80px; left:1150px; top:700px;">
+   
+<img id="myImg05" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  
+                                                                                 style="position:absolute; width:120px; height:100px; left:1000px; top:700px;">
+   
+<img id="myImg06" src="https://cdn.tutsplus.com/active/uploads/legacy/tuts/314_box2D/Tutorial/SimpleCrate.png"  
+                                                                                 style="position:absolute; width:120px; height:100px; left:130px; top:520px;">
+   
+<img id="myImg07" src="https://th.bing.com/th/id/R.059f7430f259635b0b414e1ad871763d?rik=D6%2f%2fIaAJHAXsvQ&pid=ImgRaw&r=0"  
+                                                                                 style="position:absolute; width:140px; height:120px; left:450px; top:750px;">
+   
+<img id="myImg08" src="https://3.bp.blogspot.com/-Ri7C8vgnQT0/TnuaY8GU_7I/AAAAAAAAATw/NQ7JuhxPEck/s1600/box+3.jpg"  
+                                                                                 style="position:absolute; width:140px; height:120px; left:1250px; top:650px;">
+   
+<img id="myImg09" src="https://opengameart.org/sites/default/files/RTS_Crate_0.png"  
+                                                                                 style="position:absolute; width:240px; height:60px; left:1100px; top:850px;">
+   
+<img id="myImg10" src="https://www.pinclipart.com/picdir/big/348-3487565_treasure-chest-id-305-sprite-club-cartoon-treasure.png"  
+                                                                                 style="position:absolute; width:80px; height:60px; left:800px; top:230px;">
+   
+<img id="myImg11" src="https://opengameart.org/sites/default/files/styles/medium/public/cratetex_0.png"  
+                                                                                 style="position:absolute; width:150px; height:130px; left:1500px; top:350px;">
+   
+<img id="myImg12" src="https://3.bp.blogspot.com/-Ri7C8vgnQT0/TnuaY8GU_7I/AAAAAAAAATw/NQ7JuhxPEck/s1600/box+3.jpg"  
+                                                                                 style="position:absolute; width:130px; height:110px; left:200px; top:250px;">
+   
+   
+   
+   
+   
+   
+   
+<style>
+   p{
+      background-color:white;
+   }
+   </style>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
