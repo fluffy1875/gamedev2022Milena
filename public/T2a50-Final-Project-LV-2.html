@@ -1,4 +1,4 @@
-<p> Version 0.0.4 </p>
+<p> Version 0.0.5 </p>
 
 
 <script>
@@ -88,9 +88,9 @@ function myCheckHit(){
    }   
    if ( myHitOther('myMain','myImg12') ){
        //alert('you lose')
-      document.getElementById('myMain').style.left = '20px'
-      document.all.myText01.value = 'You hit myImg12'  
-      myScore -= 4
+      document.getElementById('myImg12').style.left = '20px'
+      document.all.myText01.value = 'You got 6 more lives!'  
+      myScore += 6
    } 
    if ( myHitOther('myMain','myBottomBorder') ){
        //alert('you lose')
