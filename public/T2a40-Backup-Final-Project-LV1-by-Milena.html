@@ -1,0 +1,253 @@
+<p> Version 0.0.8 </p>
+
+<script>
+
+   // global variables here
+
+   let myGlobalX = 0
+   let myClock
+   let myScore = 10
+
+
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+function myCheckHit(){
+   document.all.myText01.value = myScore  // show the present score
+
+   if ( myHitOther('myMain','myImg02') ){
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg02'  
+      myScore -= 1
+   }   
+   
+   if ( myHitOther('myMain','myImg03') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg03'  
+      myScore -= 2
+   } 
+   if ( myHitOther('myMain','myImg05') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'myImg05'  
+      myScore -= 3
+   }   
+   if ( myHitOther('myMain','myImg06') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg06'  
+      myScore -= 1
+   }   
+   if ( myHitOther('myMain','myImg07') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg07'  
+      myScore -= 2
+   }   
+   if ( myHitOther('myMain','myImg08') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg08'  
+      myScore -= 3
+   }   
+   if ( myHitOther('myMain','myImg09') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg09'  
+      myScore -= 4
+   }   
+   if ( myHitOther('myMain','myImg10') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg010'  
+      myScore -= 1
+   }   
+   if ( myHitOther('myMain','myImg11') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg11'  
+      myScore -= 2
+   }  
+   if ( myHitOther('myMain','myImg12') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myImg12'  
+      myScore -= 1
+   } 
+   if ( myHitOther('myMain','myBottomBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myBottomBorder'  
+      myScore -= 10
+   }   
+   if ( myHitOther('myMain','myLeftBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit myLeftBorder'  
+      myScore -= 10
+   }   
+   if ( myHitOther('myMain','myTopBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit TopBorder'  
+      myScore -= 10
+   }   
+   if ( myHitOther('myMain','myRightBorder') ){
+       //alert('you lose')
+      document.getElementById('myMain').style.left = '20px'
+      document.all.myText01.value = 'You hit RightBorder'  
+      myScore -= 10
+   }   
+   
+  // you LOSE refresh the page
+   if (myScore <= 0){
+    document.all.myText01.value = 'You Lose scrore at zero!'  
+    alert('Sorry you lose')
+    location.reload()
+   }
+
+   // YOU WIN and go to next level!
+
+   if ( myHitOther('myMain','myPortal') ){
+      document.all.myText01.value = 'You hit myImg04 and you win the game!'  
+       alert('You Win, now go to the next level')
+      document.getElementById('myMain').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+
+   // more if statements here
+
+}
+
+
+</script>
+
+
+
+
+<body id="myBody" style="background-repeat:repeat; background-size: 100%" background="https://images.alphacoders.com/109/thumb-1920-1099553.jpg"  onkeydown="{
+
+   document.all.myText01.value = event.key
+
+   if (event.key == 'd') {  // d = go right
+     document.getElementById('myMain').style.left = parseInt(document.getElementById('myMain').style.left) + 10 + 'px'
+   }   
+
+   if (event.key == 's') {   // s = go down
+      document.getElementById('myMain').style.top = parseInt(document.getElementById('myMain').style.top) + 10 + 'px'
+   }  
+   if (event.key == 'a') {   
+      document.getElementById('myMain').style.left = parseInt(document.getElementById('myMain').style.left) - 10 + 'px'
+   }
+   if (event.key == 'w') {  
+      document.getElementById('myMain').style.top = parseInt(document.getElementById('myMain').style.top) - 10 + 'px'
+   }
+
+   // put more here
+
+
+
+  myCheckHit()     // checks for all collisions
+}">
+
+
+
+
+
+<h1 align=center><font color=Yellow>T4A05 Template with WASD by Fred</font></h1>
+
+<input id="myText01" type=text value="" size=50 placeholder="Feedback here"><br>
+
+<input type=button value="Auto Background Left" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+    
+}">
+
+
+
+
+<img id="myMain" src="https://freepngimg.com/thumb/flying_bird/26020-6-flying-bird-transparent-background.png"  
+                                                                                 style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
+<img id="myImg02" src="https://www.freeiconspng.com/images/number-1-png"  
+                                                                                 style="position:absolute; width:150px; height:130px; left:1200px; top:80px;">
+<img id="myImg03" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  
+                                                                                 style="position:absolute; width:170px; height:150px; left:750px; top:300px;">
+<img id="myPortal" src="https://freepngimg.com/download/portal/27619-7-portal-image.png"  
+                                                                                 style="position:absolute; width:100px; height:80px; left:1150px; top:700px;">
+   
+<img id="myImg05" src="https://th.bing.com/th/id/OIP.wZgfBEkEpPlIp54cfb461QHaHv?pid=ImgDet&w=285&h=298&rs=1"  
+                                                                                 style="position:absolute; width:120px; height:100px; left:1000px; top:700px;">
+   
+<img id="myImg06" src="https://cdn.tutsplus.com/active/uploads/legacy/tuts/314_box2D/Tutorial/SimpleCrate.png"  
+                                                                                 style="position:absolute; width:120px; height:100px; left:130px; top:520px;">
+   
+<img id="myImg07" src="https://th.bing.com/th/id/R.059f7430f259635b0b414e1ad871763d?rik=D6%2f%2fIaAJHAXsvQ&pid=ImgRaw&r=0"  
+                                                                                 style="position:absolute; width:140px; height:120px; left:450px; top:750px;">
+   
+<img id="myImg08" src="https://3.bp.blogspot.com/-Ri7C8vgnQT0/TnuaY8GU_7I/AAAAAAAAATw/NQ7JuhxPEck/s1600/box+3.jpg"  
+                                                                                 style="position:absolute; width:140px; height:120px; left:1250px; top:650px;">
+   
+<img id="myImg09" src="https://opengameart.org/sites/default/files/RTS_Crate_0.png"  
+                                                                                 style="position:absolute; width:240px; height:60px; left:1100px; top:850px;">
+   
+<img id="myImg10" src="https://www.pinclipart.com/picdir/big/348-3487565_treasure-chest-id-305-sprite-club-cartoon-treasure.png"  
+                                                                                 style="position:absolute; width:80px; height:60px; left:800px; top:230px;">
+   
+<img id="myImg11" src="https://opengameart.org/sites/default/files/styles/medium/public/cratetex_0.png"  
+                                                                                 style="position:absolute; width:150px; height:130px; left:1500px; top:350px;">
+   
+<img id="myImg12" src="https://3.bp.blogspot.com/-Ri7C8vgnQT0/TnuaY8GU_7I/AAAAAAAAATw/NQ7JuhxPEck/s1600/box+3.jpg"  
+                                                                                 style="position:absolute; width:130px; height:110px; left:200px; top:250px;">
+   
+<img id="myBottomBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:1705px; height:40px; left:0px; top:950px;">
+<img id="myLeftBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:40px; height:950px; left:-45px; top:5px;">
+<img id="myTopBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:1705px; height:40px; left:0px; top:-60px;">
+<img id="myRightBorder" src="https://media2.fdncms.com/stranger/imager/u/large/43820816/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png"  
+                                                                               style="position:absolute; width:5px; height:950px; left:1700px; top:0px;">   
+   
+   
+   
+   
+   
+<style>
+   p{
+      background-color:white;
+   }
+   </style>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
