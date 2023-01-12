@@ -1,4 +1,4 @@
-<p> Version 0.0.8 </p>
+<p> Version 0.0.7 </p>
 
 <script>
 
@@ -75,9 +75,9 @@ function myCheckHit(){
    }   
    if ( myHitOther('myMain','myImg10') ){
        //alert('you lose')
-      document.getElementById('myMain').style.left = '20px'
-      document.all.myText01.value = 'You hit myImg010'  
-      myScore -= 1
+      document.getElementById('myImg10').style.left = '-500px'
+      document.all.myText01.value = 'You got 5 more Lives!'  
+      myScore += 5
    }   
    if ( myHitOther('myMain','myImg11') ){
        //alert('you lose')
@@ -129,7 +129,7 @@ function myCheckHit(){
       document.all.myText01.value = 'You hit myImg04 and you win the game!'  
        alert('You Win, now go to the next level')
       document.getElementById('myMain').style.left = '20px'
-      location = 'https://www.google.ca'
+      location = 'T2a50-Final-Project-LV-2.html'
    }
 
    // more if statements here
